@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //arithmatic operators eg. +,-,*,/,%
+    //relational operator eg. <,>,<=,>=,==,!= (not equal to)
+    //alert( 15 != 15);
+
+    //logical operator eg. && (and) , || (or) , ! (not)
+
+    function abc()
+    {
+        var marks=Number(document.getElementById("m1").value);
+        // alert(" ur marks is "+marks);
+
+        // 0-100
+        // if(marks>=0 && marks<=100)//both the conditions must be true
+        // // if(marks>=0 || marks<=100)//alteast one of the conditions must be true
+        // // if(!(marks>=0))
+        // {
+        //     document.getElementById("result").innerHTML="valid marks";
+        // }
+        // else
+        // {
+        //     document.getElementById("result").innerHTML="invalid marks";
+        // }
+        
+        //shorthand operator(Assignment operator) eg. +=,-=,/=,*=
+        // marks=marks+10;
+        // or 
+        // marks+=10;
+        marks*=10;
+        document.getElementById("result").innerHTML="the value of marks is "+marks;
+
+    }
+    </script>
+</head>
+<body>
+
+    Marks <input type="text" id="m1">
+    <input type="submit" value="Click" onclick="abc()">
+
+    <h1 id="result" style="color:red"></h1>
+
+    
+</body>
+</html>
+
+
+<!--
+
+1. Write a js program to accept two integers and check whether they are equal or not. 
+Test Data : 15 15
+Expected Output :
+Number1 and Number2 are equal
+ 
+
+2. Write a js program to check whether a given number is even or odd. 
+Test Data : 15
+Expected Output :
+15 is an odd integer
+ 
+
+3. Write a js program to check whether a given number is positive , negative or zero. 
+Test Data : 15
+Expected Output :
+15 is a positive number
+ 
+
+4. Write a js program to find whether a given year is a leap year or not. 
+Test Data : 2016
+Expected Output :
+2016 is a leap year.
+ 
+
+5. Write a js program to read the age of a candidate and determine whether it is eligible for casting his/her own vote. 
+Test Data : 21
+Expected Output :
+Congratulation! You are eligible for casting your vote.
+ 
+
+6. Write a js program to read the value of an integer m and display the value of n is 1 when m is larger than 0, print n=0 when m is 0 and -1 when m is less than 0. 
+Test Data : -5
+Expected Output :
+The value of n = -1
+ 
+
+7. Write a js program to accept the height of a person in centimeter and categorize the person according to their height. 
+Test Data : 135
+Expected Output :
+The person is Dwarf.
+ 
+
+8. Write a js program to find the largest of three numbers. 
+Test Data : 12 25 52
+Expected Output :
+1st Number = 12,        2nd Number = 25,        3rd Number = 52
+The 3rd Number is the greatest among three
+ 
+
+9. Write a js program to accept a coordinate point in a XY coordinate system and determine in which quadrant the coordinate point lies. 
+Test Data : 7 9
+Expected Output :
+The coordinate point (7,9) lies in the First quadrant.
+ 
+-->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal()
+        {
+            var a=parseInt(document.getElementById("a1").value);
+            var b=parseInt(document.getElementById("b1").value);
+            var add,mul,div,sub;
+            add=a+b;
+            mul=a*b;
+            div=a/b;
+            sub=a-b;
+            document.getElementById("add").innerHTML="<b>"+add+"</b>";
+            document.getElementById("mul").innerHTML="<b>"+mul+"</b>";
+            document.getElementById("div").innerHTML="<b>"+div+"</b>";
+            document.getElementById("sub").innerHTML="<b>"+sub+"</b>";
+        }
+        </script>
+</head>
+<body>
+    <div id="main-wrapper">
+        <center>
+        <table border="2px" width="80%">
+            <thead>
+               <tr><th colspan="2">Calculator</th></tr>
+               <tr><td>Enter the value of a and b </td><td><input type="text" id="a1" placeholder="a"><input id="b1" type="text" placeholder="b"></td></tr>
+            </thead>
+            <tbody>
+                <tr><td>Add</td><td >Result :<span id="add"></span></td></tr>
+                <tr><td>multiply</td><td >Result :<span id="mul"></span></td></tr>
+                <tr><td>divide</td><td >Result :<span id="div"></span></td></tr>
+                <tr><td>sub</td><td >Result :<span id="sub"></span></td></tr>
+              
+            </tbody>
+            <tfoot>
+              <tr><td colspan="2"> <button onclick="cal();" >Calculate</button></td></tr>
+            </tfoot>
+        </table>
+        </center>
+    </div>
+</body>
+</html>

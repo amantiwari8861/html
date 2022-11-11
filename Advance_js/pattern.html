@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function abc()
+    {
+       var sheet=document.getElementById("can");
+       var context=sheet.getContext("2d");
+        var img1=document.getElementById("img1");
+        var i;
+        var img2=document.getElementById("img2");
+        var img3=document.getElementById("img3");
+        var pattern1=context.createPattern(img1,"repeat");
+        var pattern2=context.createPattern(img2,"repeat-x");
+        var pattern3=context.createPattern(img3,"repeat-y");
+     
+            context.rect(0,0,800,130);
+            context.fillStyle=pattern2;
+            context.fill();
+            context.stroke();
+            context.rect(10,140,800,100);
+            context.fillStyle=pattern1;
+            context.fill();
+            context.rect(10,240,800,100);
+            context.fillStyle=pattern3;
+            context.fill();
+    }
+    </script>
+</head>
+<body onload="abc()">
+    <img src="e635.png" height="100px" width="100px" id="img1">
+    <img src="e636.png" height="100px" width="100px" id="img2">
+    <img src="ea20.png" height="100px" width="100px" id="img3">
+    <canvas height="400" width="780" id="can" style="background: rgb(89, 175, 233);">canvas is not spported in ur browser </canvas>
+</body>
+</html>

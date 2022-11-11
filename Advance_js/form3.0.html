@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+      function show()
+       {
+        var x = document.myform.pass;
+        if (x.type == "password")
+         {
+            x.type = "text";
+        }
+         else {
+            x.type = "password";
+        }
+       }
+  /*     function validateEmail() {
+         var emailID = document.myForm.mail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         //do yourself
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.mail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+*/    function valitz()
+    {
+        var fname=document.forms["myform"]["fname"].value;
+        //var fname2=document.myform.fname.value;
+        var nreg=/^[A-Za-z]+$/; //regex
+      // var preg=/^[0-9a-zA-Z]+$/;
+        //var sreg=/^[0-9]+$/;
+       //alert(fname);
+       //alert("this is method 2 "+fname2);
+       var pas=document.myform.pass.value;
+            var cpas=document.myform.cpass.value;
+            var tele=document.myform.telephone.value;
+            
+        if(fname=="")
+        {
+            alert("enter the name");
+            document.getElementById("error").innerHTML+="wrong name format ";
+            document.myform.fname.focus();
+            return false;
+        }
+        else if(fname.length>8 || fname.length<3)
+        {
+            alert("name must be less than 8 characters ");
+            return false;
+        }
+        else if(fname.search(nreg)==-1)//gives -1 if not matched the search condition
+        {
+            alert("must not be a numeric");
+            return false;
+        }
+        else if(pas!=cpas)
+        {
+            alert("pass is not same ");
+            return false;
+        }
+        else if(isNaN(tele) ||  tele.length!=10)//rtyuhjgfds
+        {
+            alert("invalid no.");
+            return false;
+        }
+
+        else{
+            return true;
+        }
+    }
+    </script>
+</head>
+<body style="font-size: xx-large;">
+    <div>
+        <center>
+        <form action="" method="POST" name="myform" onsubmit="return valitz()">
+            
+            <!-- <label for="first_name" name="fname" >First Name&nbsp;&nbsp;&nbsp;</label><input type="text" id="fname" name="fname" autocomplete="off" title="enter ur name" placeholder="First Name" required > -->
+            <label for="first_name" name="fname" >First Name&nbsp;&nbsp;&nbsp;</label><input type="text" id="fname" name="fname" autocomplete="off" title="enter ur name" placeholder="First Name" >
+            <span id="error"  style="color:red;"></span>
+            <br><label> Number</label><input type="number" max="100" min="0">
+            <br><label>pincode</label><input type="text" name="pin" title="must be numeric">
+            <br><label>password</label><input type="password" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            <input type="checkbox" name="chk" id="chk" onclick="show()">
+            <br><label> confirm password</label><input type="password" name="cpass">
+            <br><label> Phone No.</label><input type="tel" name="telephone">
+            <br><label for="mail">Email</label><input type="email" name="mail">
+            <input type="submit" value="submit">
+        </form>
+    </center>
+    </div>
+</body>
+</html>

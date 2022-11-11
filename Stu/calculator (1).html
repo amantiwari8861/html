@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>calculator</title>
+
+<script>
+function cal()
+{
+/*document.getElementById("x2").innerHTML="<b>"+"u have pressed a power button"+"</b>";
+var a=document.getElementById("x2").innerHTML;
+alert(a);*/                         // message display nahi kar raha
+
+
+}
+</script>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>calculator</title>
+
+<script>
+function cal()
+{
+var a,b,c;
+/*document.getElementById("x2").innerHTML="<b>"+"u have pressed a power button"+"</b>";
+var a=document.getElementById("x2").innerHTML;
+alert(a);*/                         // message display nahi kar raha
+
+a=document.getElementById("x1").value;
+b=document.getElementById("x2").value;
+c=a+b;
+document.getElementByClassName("abc").value="<b>"+" = "c+"</b>";
+
+}
+</script>
+<style>
+padding-right:0px;                                      //padding adjust nahi ho rahi
+</style>
+</head>
+<body>
+<center>
+<table border="2px" height="200px" width="250px">
+<thead>
+<tr >
+<th colspan="4"><input type="number" class="abc" placeholder="Enter any number" onclick="cal();" style="outline:none;border:none"></th>
+</tr>
+<tr><th><button id="xyz" style="padding-right:0px;">ON</button></th></tr>                    <!--padding adjust nahi ho rahi-->
+</thead>
+<tbody>
+<tr ><td  ><input type ="button" id="x0" value= " 0 " onclick="insert(0)"></td><td><input type ="button" id="x1" value= " 1 " onclick="insert(1)"></td><td><input type ="button" id="x2" value= " 2 " onclick="insert(2)"></td><td><input type ="button"="x3" value= " 3 " onclick="insert(3)"></td></tr>
+<tr><td><input type ="button" id="x4" value= " 4 "onclick="insert(4)"></td><td><input type ="button" id="x5" value= " 5 " onclick="insert(5)"></td><td><input type ="button"="x6" value= " 6 " onclick="insert(6)"></td><td><input type ="button" id="x7" value= " 7 " onclick="insert(7)"></td></tr>
+<tr><td><input type ="button" id="x8" value=" 8 " onclick="insert(8)"></td><td><input type ="button" id="x9" value="9" onclick="insert(9)"></td><td><input type ="button" id="x10" value=" + " onclick="insert("+")"></td><td><input type ="button" id="x11" onclick="cal();" value= " Enter " ></td></tr>
+<tr><td><input type ="button"="x12" value= " - " onclick="insert("- ")"></td><td><input type ="button"="x13" value= " * " onclick="insert("*")"></td><td><input type ="button"="x14" value= " / " onclick="insert("/")"></td></tr>
+<p id="abc1"></p>
+</table>
+</center>
+</body>
+</html>

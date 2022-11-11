@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function fxn()
+    {
+      // var fname=parseFloat(document.getElementById("fname").value);
+      // var lname=parseFloat(document.getElementById("lname").value);
+       var fname=document.getElementById("fname").value;
+       var lname=document.getElementById("lname").value;
+        //var sum=fname+lname;
+       // var full_name=fname+lname;
+
+        alert(fname+"\t"+lname);
+
+
+      /*  if(sum>=120 && sum<=200 )//true block 
+        {
+         alert(sum);
+        }
+        else if(sum>200)
+        {
+            alert("greater than 200");
+        }
+        else{
+            alert("invalid\tsum");
+        }
+        switch(sum)
+        {
+            case 200:console.error("value is 200");
+            break;
+            case 300:console.warn("value is 300");
+            break;
+            default:console.log("invalid case");
+        }*/
+
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <center>
+            <form action="" method="POST">
+            <input type="text" name="fname" id="fname" required pattern="[A-Za-z0-9]{8}">
+            <input type="text" name="lname" id="lname">
+            <input type="submit" onclick="" value="Click">
+            </form>
+            //get :insecure bcz values is shown in adress bar
+            //post :secure bcz values is not shown in adress bar
+            //pattern  attributes helps us to use pre-defined validation
+
+            //validation is the  last topic 
+        </center>
+    </div>
+</body>
+</html>

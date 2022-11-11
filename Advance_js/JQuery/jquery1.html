@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h2{
+            color:red;
+        }
+    </style>
+       <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script>  -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="jquery-3.5.1.js"></script> -->
+<script >
+    $(document).ready(function(){
+        $("h2").click(function(){
+            $(this).hide();
+        });
+        $("#but").click(function(){
+            // $("h2").show();
+            $("h2").toggle();
+        });
+    });
+    </script>
+</head>
+<body>
+    <div>
+        <center>
+        <h2>Hello today is Jquery's first class </h2>
+        <button id="but">Show</button>
+<!--<pre>
+        Q.1  what is jQuery 
+
+        i) JQuery is a lightweight write less do more JavaScript library 
+        ii) The purpose of jQuery is to make it much easier to use JS on your website 
+        iii) It takes a lot of common task that requires many lines of JS code to accomplish and 
+              wraps them into methods that you can call with a single line of code 
+        iV) jQuery also simplifies a lot of the complicated things from JS like ajax calls and Dom manipulation 
+        v) the jQuery library contains the following features 
+            a) hTML / dom manipulation 
+            b) cSS manipulation 
+            c) hTML event methods 
+            d) effects and animation. 
+        
+        
+            Q. 2) there are two versions of jQuery available for downloading which version we should have to choose ? 
+
+            Production version - this is for your live website because it has been minified and compressed 
+            Development version - this is for testing and development(decompressed and readable code) 
+            Both versions can be downloaded from jquery.com 
+            
+            The jQuery library is a single JS file and you reference it with the HTML script tag 
+            (notice that the script tag should be inside the head section ) 
+            
+            Q. 3 what is JQuery syntax ? 
+            JQuery Syntax is made for selecting HTML elements and performing some actions on the elements 
+            Basic Syntax is: $(selector).action() or jquery(selector).action()
+            
+            Dollar sign is to define / access jquery 
+            a (selector) to "query (or find) html elements " 
+            examples . 
+            
+            1. $(this).hide() - hides the current element 
+            2. $("p").hide() - hides all the <p> elements 
+            3. $(".test").hide() - hides all the elements with class = "test". 
+            4. $("#test").hide() - hides the selected id element = "test" 
+        </pre>     
+<img src="jqueryflowchart.png">    -->            
+
+
+
+    </center>
+    </div>
+</body>
+</html>

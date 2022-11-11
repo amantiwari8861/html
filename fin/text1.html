@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Editor</title>
+<link href="text.css" rel="stylesheet">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="codemirror.css">
+<script src="codemirror.js"></script>
+<script src="codemirror_jsx.js"></script>
+</head>
+<body>
+<div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">	<!DOCTYPE html>
+		<html>
+		<body>
+		<h2>JavaScript Arrays</h2>
+		<p id="demo"></p>
+		<script>
+		var cars = ["Saab", "Volvo", "BMW"];
+		document.getElementById("demo").innerHTML = cars;
+		</script>
+		</body>
+		</html>
+</textarea>
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code" />
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"></div>
+    </div>
+  </div>
+</div>
+  </body>
+  </html>
+    

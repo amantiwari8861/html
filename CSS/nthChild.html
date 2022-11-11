@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        h1:first-child
+        {
+            color: red;
+        }
+        h1:last-child
+        {
+            color: green;
+        }
+        /* h1:nth-child(4)
+        {
+            color: purple;
+        } */
+        h1:nth-child(2n)
+        {
+            color: purple;
+            font-family: 'Dancing Script';
+        }
+        h1:nth-child(2n+1)
+        {
+            color: rgb(27, 11, 253);
+        }
+        p::selection
+        {
+            background-color: yellow;
+            color: green;
+        }
+        p::marker
+        {
+            color: red;
+        }
+        mark{
+            background-color: fuchsia;
+        }
+    </style>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+    <h1>Heading 4</h1>
+    <h1>Heading 5</h1>
+    <h1>Heading 6</h1>
+    <h1>Heading 7</h1>
+    <h1>Heading 8</h1>
+    <h1>Heading 9</h1>
+    <h1>Heading 10</h1>
+
+    <p>Lorem ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. Officia natus deserunt esse laborum, aliquid aspernatur porro voluptas labore perferendis, sequi quae at sed aut dignissimos! Doloremque illum asperiores consequatur quos?</p>
+</body>
+</html>

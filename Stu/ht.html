@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height:300px;
+            width:100px;
+            background-color: blueviolet;
+            border:2px dotted red;
+        }  
+        .parent:hover{
+            height:300px;
+            width:100px;
+            background-color: greenyellow;
+            border:2px solid red;
+           /* transform: rotate3d(1,1,0,-180deg);
+           transform: rotate(60deg);*/
+           transform: skew(60deg);
+        }
+        .sub{
+            height:50px;
+            border:1px solid blue;
+            width:100%;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="parent">
+        <div class="sub">This is sub</div>
+    </div>
+    </center>
+</body>
+</html>

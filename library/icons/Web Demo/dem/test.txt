@@ -1,0 +1,14 @@
+Q.1 multiply the two matrix.
+Q.2
+
+1				@				A			*
+12				@@				BB			***
+123				@@@				CCC			*****
+1234			@@@@			EEEEE		*******
+12345			@@@@@						*********
+
+3. WAP to check whether a number is armstrong or not .
+4.take input from user in array and count the number,symbols,
+	capital and small alphabet.
+5.take input a character from user and count the no. of vowels and consonant.
+6. perform addition of two matrix.

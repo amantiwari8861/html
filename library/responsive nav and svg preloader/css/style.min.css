@@ -1,0 +1,163 @@
+body {
+	height:100%;
+	min-height:100%;
+	position:relative;
+}
+* {
+	margin:0;
+	padding:0;
+}
+html {
+	background-color:#fdfcfb
+}
+
+ul {
+	list-style:none
+}
+a {
+	color:#e94439;
+	text-decoration:none
+}
+a:hover {
+	color:#ee6f67;
+	text-decoration:underline
+}
+h2 {
+	font-family:Arvo, Arial, sans-serif;
+	font-size:30px;
+	line-height:25px;
+	font-weight:500;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:1px
+}
+h1 {
+	font-family:Arvo, Arial, sans-serif;
+	font-size:60px;
+	line-height:75px;
+	font-weight:400;
+	color:#e94439;
+	text-transform:lowercase
+}
+p {
+	font-family:Georgia, Arial, sans-serif;
+	font-size:15px;
+	line-height:15px;
+	font-weight:100;
+	color:#fff
+}
+
+
+section {
+	min-width:100%;
+	width:100%;
+	min-height:100%;
+	text-align:center;
+	padding:0px 0;
+	margin-bottom:30px;
+}
+#gallery{float:left; width:100%;}
+section #gallery #fullPreview {
+	padding:0px 0 30px 0;
+	display:none
+}
+section #gallery #fullPreview img, section #gallery #fullPreview .fullCaption {
+	max-width:960px;
+	width:100%;
+	margin:0 auto;
+	display:block
+}
+section #gallery #fullPreview .fullCaption {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:13px;
+	line-height:15px;
+	font-weight:300;
+	color:#fff;
+	margin:15px auto 0 auto
+}
+section #gallery #fullPreview figure {
+	background-image:url(../images/close.png);
+	background-size:100%;
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:10px;
+	right:20px;
+	cursor:pointer
+}
+section #gallery li {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	float:left; widows:100$;
+}
+section #gallery  li:hover .overLayer {
+	-webkit-transition:opacity 0.3s linear;
+	-moz-transition:opacity 0.3s linear;
+	-ms-transition:opacity 0.3s linear;
+	-o-transition:opacity 0.3s linear;
+	transition:opacity 0.3s linear;
+	opacity:0.6;
+	display:block;
+	background:gray
+}
+section #gallery  li:hover .infoLayer {
+	-webkit-transition:opacity 0.3s linear;
+	-moz-transition:opacity 0.3s linear;
+	-ms-transition:opacity 0.3s linear;
+	-o-transition:opacity 0.3s linear;
+	transition:opacity 0.3s linear;
+	opacity:1;
+	display:block
+}
+section #gallery  li a {
+	display:block;
+	width:240px;
+	height:150px;
+	position:absolute;
+	top:10px;
+	left:0;
+	z-index:6
+}
+section #gallery  li img {
+	border:none;
+	margin:10px 10px 0 0
+}
+section #gallery  li .overLayer, section #gallery  li .infoLayer {
+	-webkit-transition:opacity 0.3s linear;
+	-moz-transition:opacity 0.3s linear;
+	-ms-transition:opacity 0.3s linear;
+	-o-transition:opacity 0.3s linear;
+	transition:opacity 0.3s linear;
+	width:240px;
+	height:150px;
+	position:absolute;
+	text-align:center;
+	opacity:0;
+	top:10px;
+	left:0;
+	z-index:4
+}
+section #gallery  li .overLayer ul, section #gallery  li .infoLayer ul {
+	padding:50px 0 0 0
+}
+section li .overLayer ul li, section li .infoLayer ul li {
+	display:block;
+	margin:0 auto;
+	width:200px;
+	padding:0 0 5px 0
+}
+section #gallery  li .overLayer ul li:first-child, section #gallery  li .infoLayer ul li:first-child {
+	border-bottom:2px #fff solid
+}
+section  #gallery li .overLayer ul li:last-child, section li .infoLayer ul li:last-child {
+	padding:5px 0 0 0;
+	text-transform:lowercase
+}
+section  #gallery li .overLayer ul li h2, section  #gallery li .infoLayer ul li p {
+	font-size:25px; width:100%; float:left;
+}
+section #gallery  li .projectInfo {
+	display:none
+}
+

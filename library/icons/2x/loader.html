@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.second::before{
+content:"Aman\00a0tiwari 😂 🤨 &#128105;&zwj;&#128105;&zwj;&#128103;&zwj;&#128103;	";
+text-align:right;
+line-height:30px;
+display:block;
+font-size:8px;
+width:0px;
+background:green;
+background-image:url(eye.png);
+background-position:center;
+background-repeat:no-repeat;
+border-radius:15px;
+color:green;
+transition:all ease-in-out 1s;
+}
+.second::after{
+content:"";
+display:block;
+height:10px;
+width:0px;
+background:red;
+border-radius:15px;
+color:yellow;
+transition:all ease-in-out 2s;
+}
+.second:hover::before{
+width:148px;
+}
+.second:hover::after{
+width:148px;
+}
+</style>
+</head>
+<body>
+
+<div class="fir">The first div &#9762;U+1F61B	 element.</div>
+<div class="second">The first div element.</div>
+
+</body>
+</html>

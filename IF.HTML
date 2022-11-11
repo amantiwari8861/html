@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function ch()
+    {
+        var a=document.getElementById('inp').value;
+        // if (a.length>8) {
+        if (a==9) {
+            
+            document.getElementById('err').innerHTML="";
+            alert("this is 9 ");
+        }
+        else if(a>
+        8)
+        {
+            document.getElementById('err').innerHTML="";
+            alert("a is greater ");
+        }
+        else{
+            // alert(a+' is not greater');
+            document.getElementById('err').innerHTML=a+"     is not greater ";
+        }
+    } 
+    </script>
+    <style>
+        #err{
+            color: red;
+            font-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="inp" onkeyup="ch();"><span id="err"></span>
+    </div>
+</body>
+</html>

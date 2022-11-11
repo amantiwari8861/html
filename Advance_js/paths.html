@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function draw()
+    {
+       var can=document.getElementById("can");
+       var con=can.getContext("2d");
+        con.beginPath();
+       /* con.fillStyle="red";
+        con.arc(100,140,40,0,Math.PI*2,false);//true
+        con.fill();
+        //con.closePath();
+        con.stroke();*/
+      /*  con.moveTo(80,80);
+        con.lineTo(180,80);
+        con.lineTo(180,140);*/
+       /* con.moveTo(180,80);
+        con.lineTo(80,200);
+        con.lineTo(500,200);
+        con.lineTo(180,80);*/
+        //con.moveTo(180,80);
+       // con.bezierCurveTo(20,120,0,0,180,200);
+        //con.bezierCurveTo(80,100,360,180,180,200);
+        con.stroke();
+
+    }
+    </script>
+</head>
+<body onload="draw()">
+    <canvas width="800" height="400" id="can" style="background: orchid;">unsupported</canvas>
+</body>
+</html>

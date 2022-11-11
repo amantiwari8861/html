@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE HTML>
+<HTML>
+<BODY>
+<CANVAS ID="myCanvas" width="300" height="300" style="border:1px solid black">
+</CANVAS>
+<SCRIPT>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var grad=ctx.createLinearGradient(10,20,180,180);//creating object of gradient
+grad.addColorStop(0,"blue");
+grad.addColorStop("0.4","pink");
+grad.addColorStop("0.6","yellow");
+grad.addColorStop("0.7","red");
+ctx.fillStyle=grad;
+ctx.fillRect(20,20,180,180);
+</SCRIPT>
+</BODY>
+</HTML> -->
+<!DOCTYPE HTML>
+<HTML>
+<BODY>
+<CANVAS ID="myCanvas" width="300" height="300"style="border:1px solid black">
+</CANVAS>
+<SCRIPT>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var grad=ctx.createRadialGradient(95,95,5,95,95,40);
+grad.addColorStop(0,"blue");
+grad.addColorStop("0.5","yellow");
+grad.addColorStop(1,"red");
+ctx.fillStyle=grad;
+ctx.fillRect(20,20,180,180);
+</SCRIPT>
+</BODY>
+</HTML>

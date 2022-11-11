@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <SCRIPT type="text/javascript" src="jquery-3.5.1.js"></SCRIPT>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+             $("#badd").click(function(){
+            $("#para").prepend("<b> hello i am prepended text </b><br>");});
+            $("#ladd").click(function(){
+            $("#para").append("<br><b> hello i am appended text </b><br>");  });
+            $("#remove").click(function(){
+            $("#para").remove();  });
+            $("#para").dblclick(function(){
+         $("#para").after('<H3> This is the newly inserted heading.</H3>');
+            alert("before and after text added");
+            $("#para").before("<H3> This is the newly inserted heading.</H3>");
+         
+           });
+            });
+    </script>
+</head>
+<body>
+    <div id="mydiv">
+        <!-- prepend -->
+        <p id="para">This is paragraph</p>
+        <!-- append -->
+        <button id="ladd">append</button>
+        <button id="badd">prepend</button>
+        <button id="remove">Remove</button>
+        <button id="jav">Toggle</button>
+    </div>
+</body>
+</html>

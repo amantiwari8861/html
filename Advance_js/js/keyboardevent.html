@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: xx-large;
+        }
+    </style>
+    <script>
+        var a,b,c,d; //declaration of variables
+        a=10; //initialization
+        var e=20; //declaration and initialization
+        function fxn()
+        {
+            //alert("you have pressed a key");
+            var colr=document.getElementById("col").value;
+            document.body.style.background=colr;
+          //  console.log("the color is changed succesfully");
+          document.body.innerHTML="the color is changed succesfully";
+           // console.log(656782478247);
+        }
+		function fxn1()
+		{
+		alert("a key a inputed");
+		}
+		function fxn2()
+		{
+		alert("a key pessed");
+		}
+		function fxn3()
+		{
+		alert("the key is up");
+		}
+		function fxn4()
+		{
+		alert("you have lik the input tag");
+		}
+		function fxn5()
+		{
+		alert("you have left the input tag");
+		}
+        </script>
+</head>
+<body>
+<!--<body onload="fxn()">-->
+    <center>
+   <label for="onkeydown">ONKEYDOWN</LABEL> <input type="text" onkeydown="fxn1();"><BR>
+   <label for="onkeydown">ONKEYPRESS</LABEL> <input type="text" onkeypress="fxn2();"><BR>
+    <label for="onkeydown">ONKEYUP</LABEL><input type="text" onkeyup="fxn3();"> <BR>
+    <label for="onkeydown">ONFOCUS</LABEL><input type="text" onfocus="fxn4();"><BR>
+    <label for="onkeydown">ONBLUR</LABEL><input type="text" onblur="fxn5();"><BR>
+    <label for="onkeydown">ONCHANGE</LABEL><input type="color" id="col" onchange="fxn();" style="padding-left: 0%;padding-right: 0%;"><BR>
+        <input type="button" value="submit"><BR>
+        </center>
+</body>
+</html>

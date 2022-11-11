@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using transforms</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="_scripts/jquery.lettering.js"></script>
+ <script src="http://use.edgefonts.net/squada-one.js"></script>
+    <script>
+        $(document).ready(function() {                  
+            $(".hotrod").lettering();
+        });
+    </script>
+<style>
+    body {
+    background:url(_images/speed.jpg) no-repeat center top;
+    width: 1200px;
+    margin: 2em auto 0;
+    height: 400px;
+    }
+    p {
+    text-align:center;
+    }
+    .hotrod {
+        font-family: squada-one, sans-serif;
+        text-transform: uppercase;
+    }
+
+   .hotrod span {
+		color: #fff;
+        font-weight: 700;
+        line-height: 150px;
+        font-size: 140px;
+        text-align: center;
+        text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+    <h1>Working with transforms</h1>
+    <p class="hotrod">hotrod</p>
+</body>
+</html>

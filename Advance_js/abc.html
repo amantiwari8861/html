@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <noscript>script is not supported in ur browser</noscript>
+    <script type="text/javascript">
+    //for loop
+    //array
+    function fxn(){
+   // var subjects=["maths","science","engish","CS"]; //pre-define array
+   // var subjects=new Array(3);
+    var subjects=new Array();
+   /* subjects[0]="hindi";
+    subjects[1]="hindizzzzzz";
+    subjects.push("hello");
+    subjects.push("hellzzzzzzo");
+    subjects.pop();//LIFO
+    subjects.pop();
+    document.getElementById("para").innerHTML+=subjects[0]+"<br>";
+    document.getElementById("para").innerHTML+=subjects[1]+"<br>";
+    document.getElementById("para").innerHTML+=subjects[2]+"<br>";
+    document.getElementById("para").innerHTML+=subjects[3]+"<br>";
+    document.getElementById("para").innerHTML+=subjects[4]+"<br>";*/
+    for(var i=0;i<3;i++)
+    {
+        subjects[i]=prompt("enter the value at "+i+"th position");
+    }
+   /* for(var i=0;i<3;i++)
+    {
+        document.getElementById("para").innerHTML+=subjects[i]+"<br>";
+    }
+    var h=0;//0 1 2 3<3 false
+    while(h<subjects.length)
+    {
+        document.getElementById("para").innerHTML+=subjects[h]+"<br>";
+        h++;
+    }
+    do
+    {
+        document.getElementById("para").innerHTML+=subjects[h]+"<br>";
+        h++;
+    }while(h<subjects.length);*/
+    for(var abc in subjects)
+    {
+        document.getElementById("para").innerHTML+=subjects[abc]+"<br>";
+        //in js it is giving the index positions not values 
+    }
+    //h.w :create a table by using loops and insert data by using array in it
+
+
+
+    }
+    </script>
+</head>
+<body>
+    <center>
+        <p id="para"></p>
+        <button onclick="fxn()"> click</button>
+    </center>
+</body>
+</html>

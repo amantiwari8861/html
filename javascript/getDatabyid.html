@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function aijaj()
+        {
+            // alert("Form Submitted Succesfully !");
+            let name=document.getElementById("name").value;
+            let quantity=document.getElementById("q1").value;
+            let price=document.getElementById("pr").value;
+            alert(name+" has to pay "+quantity*price+" Rs.");
+        }
+    </script>
+</head>
+<body>    
+<form  onsubmit="aijaj()">
+Name : <input type="text" id="name"><br><br>
+ Quantity : <!--<input type="number" id="q1"> --><input type="text" id="q1"><br><br>
+Price : <!-- <input type="number" id="pr"> --><input type="text" id="pr"><br><br>
+<input type="submit" value="Submit Form">
+<input type="reset" value="clear form">
+</form>
+
+
+
+
+
+
+</body>
+</html>

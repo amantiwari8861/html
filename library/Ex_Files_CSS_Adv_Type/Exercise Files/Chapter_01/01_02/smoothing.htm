@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Font Smoothing</title> 
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+<style>
+body {
+        font: 100% Georgia, Times, serif;
+    }
+section {
+    float: left;
+    margin-right:5%;
+    width: 28%;
+    margin-bottom: 2em;
+    }
+section.last {
+    float: none;
+    clear: both;
+    width: 50%;
+    }
+h2 {
+    font: 2em Arial, sans-serif;
+    }
+p {
+    font-size: 1.2em;
+    padding: 10px;
+    box-sizing: border-box;
+    }
+p.dark {
+    background:black;
+    color: white;
+    }
+.none {
+   
+    }
+.subpixel {
+    
+    }
+.anti {
+    
+    }
+</style>
+</head>
+<body>
+    <h1>Font smoothing</h1>
+    <section class="none">
+        <h2>None</h2>
+        <p>This text has no font smoothing enabled.</p>
+        <p>in pretium nibh mattis. Donec ac leo eu nulla sodales tincidunt ac at quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p class="dark">This text has no font smoothing enabled</p>
+    </section>
+    <section class="subpixel">
+        <h2>subpixel antialiasing</h2>
+        <p>This text has subpixel antialising font smoothing enabled</p>
+        <p>in pretium nibh mattis. Donec ac leo eu nulla sodales tincidunt ac at quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p class="dark">This text has subpixel antialising font smoothing enabled</p>
+    </section>
+        <section class="anti">
+        <h2>Antialiasing</h2>
+        <p>This text has antialised font smoothing enabled</p>
+            <p>in pretium nibh mattis. Donec ac leo eu nulla sodales tincidunt ac at quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p class="dark">This text has antialised font smoothing enabled</p>
+    </section>
+    <section class="last">
+        <h2>Normal</h2>
+        <p>This text has no font smoothing applied</p>
+        <p>in pretium nibh mattis. Donec ac leo eu nulla sodales tincidunt ac at quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para{
+            color:red;
+        }
+        #para2{
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+    function hiden()
+    {
+    document.getElementById("wrapper").style.display="none";
+    }
+    function show()
+    {
+    document.getElementById("wrapper").style.display="block";
+    document.getElementById("wrapper").style.fontWeight="bold";
+    document.getElementById("wrapper").style.color="red";
+    }
+
+// function wordAnimation
+// font-weight:xx-large;
+// element.style.fontWeight="";
+
+    function hid()
+    {
+        document.getElementsByClassName("mydiv")[2].style.display="none";
+        document.getElementsByClassName("mydiv")[0].style.display="none";
+        document.getElementsByClassName("mydiv")[3].style.display="none";
+    }
+    function abc()
+    {
+        document.getElementById("para").style.display="block";
+        document.getElementById("wrapper").innerHTML+="<p id='para2' style='color:green;'>"+"hello"+"</p";
+    }
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <p>
+            <p id="para" style="display: none;">hello i am bydefault hidden</p>
+            <button onclick="abc()">click</button>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa, fugit ipsum omnis, placeat commodi vero similique iure ipsa consequuntur cupiditate nihil saepe aperiam veritatis fugiat. Modi, voluptate necessitatibus! Obcaecati!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa, fugit ipsum omnis, placeat commodi vero similique iure ipsa consequuntur cupiditate nihil saepe aperiam veritatis fugiat. Modi, voluptate necessitatibus! Obcaecati!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa, fugit ipsum omnis, placeat commodi vero similique iure ipsa consequuntur cupiditate nihil saepe aperiam veritatis fugiat. Modi, voluptate necessitatibus! Obcaecati!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa, fugit ipsum omnis, placeat commodi vero similique iure ipsa consequuntur cupiditate nihil saepe aperiam veritatis fugiat. Modi, voluptate necessitatibus! Obcaecati!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa, fugit ipsum omnis, placeat commodi vero similique iure ipsa consequuntur cupiditate nihil saepe aperiam veritatis fugiat. Modi, voluptate necessitatibus! Obcaecati!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, culpa, fugit ipsum omnis, placeat commodi vero similique iure ipsa consequuntur cupiditate nihil saepe aperiam veritatis fugiat. Modi, voluptate necessitatibus! Obcaecati!
+        </p></br>
+        <button onclick="hiden()">Hide</button>
+<label for="name">select name</label><br><br>
+<input type="text" list="chkname">
+        <datalist id="chkname">
+            <option value="aman">
+            <option value="naman">
+            <option value="abhijeet">
+            <option value="deepak">
+            <option value="sid">
+        </datalist>
+        <!-- id= unique
+        class=duplicate -->
+    
+    </div>
+    <div id="mydiv3"><p >this is my div 1</p><button onclick="document.getElementById('mydiv3').style.display='none';">hidbcsjsvnsvk</button>
+    </div>
+
+    <div class="mydiv">this is my div 2</div>
+    <div class="mydiv">this is my div 3</div>
+    <div class="mydiv">this is my div 4</div>
+    <div class="mydiv">this is my div 5</div>
+    <button ondblclick="show()">show</button>
+
+    <button onclick="setTimeout(hid,3000)">hide the div</button>
+    5 buttons same class apply styling on it by javascript
+    style by id 
+
+</body>
+</html>

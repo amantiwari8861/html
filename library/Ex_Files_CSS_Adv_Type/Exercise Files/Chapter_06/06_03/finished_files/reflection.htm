@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+    <script src="_scripts/modernizr.js"></script>
+<style>
+	.reflect {
+		font-size: 5em;
+		font-family: Georgia, Times, serif;
+		text-align: center;
+		-webkit-box-reflect: below -0.5em -webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0) 100%);
+		box-reflect: below -0.5em linear-gradient(top, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0) 100%);
+	}
+.no-cssreflections .reflect{
+	color: red;
+	box-reflect: none;
+	text-shadow: 5px 5px 10px rgba(51,51,51,0.4);
+}
+</style>
+</head>
+<body>
+    <h1>Using Modernizr</h1>
+    <p class="reflect">Reflect this</p>
+</body>
+</html>

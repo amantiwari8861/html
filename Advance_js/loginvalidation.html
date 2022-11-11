@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            justify-content: center;
+        }
+    </style>
+<script type="text/javascript">
+function validate()
+{
+   var fname=document.getElementById("fname").value;
+   var pass=document.getElementById("pass").value;
+    if(fname=="")
+    {
+        n1.innerHTML="enter the First name";
+        return false;
+    }
+    else if(pass=="")
+    {
+        p1.innerHTML="enter the password";
+        return false;
+    }
+    else if(pass.value.Length<6)
+    {
+        p1.innerHTML="password should be more than 6 ";
+        return false;
+    }
+    else if(pass.value.search(/[@[]$#%!]/)==-1)
+    {
+        p1.innerHTML="one must  be  a special character";
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+
+
+}
+</script>
+</head>
+<body>
+    <div >
+        <form method="POST" name="myForm" onsubmit="return (validate())">
+            <label>First Name</label><input type="text" name="first" id="fname" placeholder="First Name" >
+            <span id="n1" style="color:red"></span>
+            <label>Last Name</label><input type="text" name="last" id="lname" placeholder="Last Name"><br><br>
+            <label>Password</label><input type="password"  id="pass" placeholder="Password">         
+               <span id="p1" style="color:red"></span><br><br>
+              <label>Confirm Password</label> <input type="password"  id="pass2" placeholder="Confirm Password">         
+               <span id="p2" style="color:red"></span><br><br>
+               <label>Telephone :</label> <input type="tel" id="pass2" placeholder="Confirm Password">
+               <span id="t1" style="color:red"></span><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

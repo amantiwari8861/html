@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+table{
+text-align:center;
+border-spacing:0px;
+border:3px solid black;
+margin:70px;
+cellpadding:100px; }
+</style>
+<script>
+function calculate1()
+{
+var a,b,c,d;
+//b=prompt("Enter the value  b");
+//a=document.getElementById("num1").value=;
+a=document.getElementById("num1").value;
+b=prompt("enter the second no.");
+c=a+b;
+ document.getElementById("result1").innerHTML="=&nbsp;&nbsp;"+c;
+function calculate2()
+                         {
+                            d=a*b;            
+							document.getElementById("result2").innerHTML="=&nbsp;&nbsp;"+d;
+							}
+}
+</script>
+</head>
+<body>
+<center>
+<table border="2px"  width="50%" height="230px" style="text-align:center;">
+<thead style="font-size:x-large;" >
+<tr>
+<th colspan="3">Calculator</th>
+</tr>
+<tr style="font-size:large;">
+<th >Value of a and b</th>
+<th >2</th>
+<th >2 </th>
+</tr>
+</thead >
+<tbody>
+<tr>
+<td>SUM</td>
+<td colspan="2"><script>document.getElementById("result").innerHTML="=&nbsp;&nbsp;"+c;</td></script>
+
+</tr>
+<tr>
+<td>SUBTRACT</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td>MULTIPLY</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td>DIVIDE</td>
+<td colspan="2"></td>
+</tr>
+</tbody>
+</table>
+<input type="number" id="num1" >
+
+<p >Result &nbsp;<span id="result1"></span></p>
+<p >Result &nbsp;<span id="result2"></span></p>
+<button onclick="calculate1();">Output value</button>
+</div>
+</center>
+</body>
+</html>

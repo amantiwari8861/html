@@ -1,0 +1,23 @@
+inline css
+internal css
+external css
+text css
+margin 
+padding
+border 
+box model
+background
+display
+float
+position 
+z-index
+overflow 
+link 
+transition
+animation
+transformation
+layout 
+
+psuedo selectors
+flex and grid
+media query

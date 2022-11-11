@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-div{
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    place-items: center;
+    /* border: 2px solid red;
+    border-radius: 15px; */
+    background-color: rgba(30, 250, 85, 0.948);
+}
+.inner-div{
+
+    background-color: greenyellow;
+
+}

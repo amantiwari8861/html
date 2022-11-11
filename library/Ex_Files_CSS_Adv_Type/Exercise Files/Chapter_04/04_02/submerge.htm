@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using 3D Transforms</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="_scripts/jquery.lettering.js"></script>
+        <script>
+        $(document).ready(function() {                  
+            $("p").lettering();
+        });
+    </script>
+<style>
+body {
+    background: none;
+    margin-top:0;
+    }
+section {
+    width: 1200px;
+    height: 781px;
+    background: url(_images/lake.jpg)no-repeat;
+    padding: 1px;
+    margin: 0 auto;
+    }
+.text {
+    height: auto;
+    overflow: visible;
+    margin: 400px auto 0;
+    width: 830px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Creating refracting text</h1>
+    <section class="submerge">
+            <p>Submerge</p>
+    </section>
+</body>
+</html>

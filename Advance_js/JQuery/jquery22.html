@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <SCRIPT type="text/javascript" src="jquery-3.5.1.js"></SCRIPT>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      /*  $("#but").click(function(){
+        //    $("h1").fadeOut();
+        //    $("h1").fadeOut("slow");
+        //    $("h1").fadeOut("fast");
+          $("h1").fadeOut(500);
+           })
+            $("#but2").click(function(){
+           $("h1").fadeIn();
+           })
+            $("#but3").click(function(){
+           $("h1").fadeToggle();
+           })*/
+           $("#up").click(function(){
+            $("h1").slide();
+           })
+           $("#down").click(function(){
+            $("h1").slideDown();
+           })
+           $("#togg").click(function(){
+            $("h1").slideToggle();
+           })  
+           $("#fad").click(function(){
+            //  $("h1").fadeTo(50,0.5);
+            $("h1").animate({opacity:"0.5",marginLeft:"30px",marginTop:"50px"});
+           })         
+            });    </script>
+</head>
+<body>
+    <h1>hello everyone my name is aman tiwari </h1>
+    
+    <!-- <button id="but" >FadeOut</button>
+    <button id="but2" >FadeIn</button>
+    <button id="but3" >FadeToggle</button> -->
+
+      <button id="up">slideup</button>
+      <button id="down">slidedown</button>
+      <button id="togg">slidetoggle</button>
+      <button id="fad">fadeto</button>
+
+
+
+  </body>
+</html>

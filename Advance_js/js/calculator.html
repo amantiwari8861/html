@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+     
+   border-collapse: collapse;
+   float: center;
+          }
+          th{
+              text-align: center;
+              width: 40%;
+              border: 2px solid black;
+              
+              
+              
+          }
+          .cal{
+             background-image: linear-gradient(red 20%, blue 45%, yellow 60%, black 65%  );
+             -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+           font-size: xx-large;
+           border: 4px solid black;
+           background-color: blue;
+          }
+          .val{
+              font-size: x-large;
+              background-color:  rgb(248, 245, 245);;
+              height: 35px;
+              margin: 2px 2px 2px 2px;
+              border: 2px solid rgb(2, 2, 58);
+          }
+          ::placeholder{
+              color: blue;
+              border: 2px solid black;
+              padding-left: 10px;
+              
+          }
+          input:focus::-webkit-input-placeholder {
+          color:rgb(56, 248, 56);
+          
+          }
+         
+         button{
+            width:65.8% ;
+            background-color: cadetblue;
+            color: black;
+            font-weight: bold;
+            line-height: 50px;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px black;
+            display: inline-block;
+            text-align: center;
+            font-size: medium;
+
+         }
+         button:active{
+            position: relative;
+            color: chocolate;
+            box-shadow: none;
+            top: 5px;
+        }
+        td{
+            background-color: rgb(248, 245, 245);
+            margin: 0px 20px 0px 10px;
+            border: 2px solid rgb(1, 1, 56);
+
+        }
+        .ab{
+            color: chocolate;
+            
+
+        }
+       
+        </style>
+        <script>
+            function fun(){
+    var a,b,add,sub,mul,div;
+    
+    a =parseInt(document.getElementById("abc").value);
+    b =parseInt(document.getElementById("xyz").value);
+    add= a+b;
+    sub= a-b;
+    mul= a*b;
+    div= a/b;
+    document.getElementById("result1").innerHTML =add;
+    document.getElementById("result2").innerHTML =sub;
+    document.getElementById("result3").innerHTML =mul;
+    document.getElementById("result4").innerHTML =div;
+    }
+            </script>
+</head>
+<body>
+   <table border = "1" width=65.8% height= "40px" bgcolor="#b3c6ff">
+        <tr>
+            <th><div class="cal">  Calculator</div></th>
+            </tr>
+    </table>
+    <table border ="1" bgcolor="#f2f2f2"  width=65.8% >
+            <tr>
+                <th><div class="val">****Enter the values****</th>
+                <th><input type="text" id="abc" placeholder="enter value">
+                <input type="text" id="xyz" placeholder="enter value"></div></th>
+                </tr>
+                <tr>
+                    <td>&nbsp;  Addition <span style='font-size:17px;'>&#10133;</span></td>
+                    <td><p><div class="ab">&nbsp; <span style='font-size:17px;'>&#128526; Result : &nbsp;</span><span id="result1"></span></div></p></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; Subtraction <span style='font-size:17px;'>&#10134;</span>
+                    </td>
+                    <td><p><div class="ab">&nbsp;<span style='font-size:17px;'>&#128526; Result : &nbsp;</span><span id="result2"></span></div></p></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; Multiplication <span style='font-size:17px;'>&#10035;</span>
+                    </td>
+                    <td><p><div class="ab"> &nbsp; <span style='font-size:17px;'>&#128526;  Result : &nbsp;</span><span id="result3"></span></div></p></td>
+                </tr>
+                <tr>
+                    <td>&nbsp; Division <span style='font-size:17px;'>&#10135;</span>
+                    </td>
+                    <td><p><div class="ab">&nbsp;<span style='font-size:17px;'>&#128526;  Result : &nbsp;</span> <span id="result4"></span></div></p></td>
+                </tr>
+                </table>
+                <button  width=65.8%  onclick="fun();">Calculate</button>
+</body>
+</html>

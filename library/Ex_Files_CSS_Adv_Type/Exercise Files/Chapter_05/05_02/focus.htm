@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using transitions</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="_scripts/jquery.lettering.js"></script>
+    <script>
+        $(document).ready(function() {                  
+            $(".focus").lettering();
+        });
+    </script>
+<style>
+div {
+    background: black;
+    padding: 2em;
+    }
+p {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align:center;
+    }
+span {
+    color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Using transitions</h1>
+    <div>
+    <p class="focus">Stay focused!</p>
+    </div>
+</body>
+</html>

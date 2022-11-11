@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 onclick="xyz(this)">Lorem ipsum dolor sit amet consectetur </h1> -->
+    <!-- <h1 ondblclick="xyz(this)">Lorem ipsum dolor sit amet.</h1> -->
+    <!-- <h1 onmouseover="xyz(this)" onmouseout="rem2(this)">Lorem ipsum dolor sit amet.</h1> -->
+    <!-- name : <input type="text" onfocus="rem3(this)"> -->
+    <!-- name : <input type="text" oninput="rem3(this)"> -->
+    <!-- name : <input type="text" oninput="rem3(this)"> -->
+    <!-- name : <input type="text" onkeyup="rem3(this)"> -->
+    <h1 class="hii">Lorem ipsum dolor sit amet.</h1>
+
+    <!-- <h1 id="result"></h1> -->
+</body>
+<script>
+    var head3=document.querySelector(".hii");
+    head3.addEventListener('click',()=>{
+        head3.style.color="red";
+    });
+    // function rem3(e) {
+    //     e.style.backgroundColor="green"
+    //     e.style.outline="none";
+    //     e.style.border="5px solid red";
+    //     e.style.borderRadius="15px";
+    //     var v=e.value
+    //     document.querySelector("#result").innerHTML=v;
+    // }
+    // function xyz(e) 
+    // {
+    //     // alert("you clicked on h1");
+    //     // e.style.color="red";
+    //     e.style.backgroundColor="green"
+    // }
+    // function rem2(e2) {
+    //     e2.style.backgroundColor="transparent";
+    // }
+</script>
+</html>

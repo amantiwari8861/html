@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script  src="RGraph.common.core.js"></script>
+    <script src="RGraph.bar.js"></script>
+
+  <!--  <script type="text/javascript">
+        function draw()
+        {
+           var canvas=document.getElementById("can");
+            var ctx=canvas.getContext("2d");
+            var img=new Image();
+            img.src="image.jpg";
+            img.onload=function(){
+                ctx.drawImage(img,760,300,400,400,10,10,790,590);
+            }
+        }
+    </script>
+-->
+</head>
+<body> 
+    <canvas id="can" height="600" width="1800">unsupport</canvas>
+<script type="text/javascript" charset="UTF-8">
+//    window.onload =(function(){
+    // var data = [280, 45, 133, 166, 84, 259, 266, 960, 219, 311, 67, 89];
+    new RGraph.Bar({
+    id:'can',
+    data:[20,40,50,100,150,200],
+    // data:data,
+    options:{
+                xaxisLabels: [ 'Jan', 'Feb','Mar', 'Apr','May', 'Jun','Jul', 'Aug','Sep', 'Oct','Nov', 'Dec'],
+                yaxisLabelsSpecific:["1500","1000","650","700","400","300","200","0"],
+                marginLeft:350,
+            }
+            }).draw();
+    // });
+</script>
+</body>
+</html>
+
+

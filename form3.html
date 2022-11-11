@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function fun() 
+    {
+        var age=parseInt(document.getElementById("age").value);
+
+        if(age>=18)
+        {
+            alert("you are ready to vote ! ");
+        }
+        else if(age>=0 && age <18)
+        {
+            alert("you r too short to give vote ");
+        }
+        else{
+            alert("invalid input ");
+        }
+
+    }
+</script>
+</head>
+<body>
+
+    <p>Enter ur Age :</p><input type="text" id="age">
+    <button onclick="fun();">Check</button>
+    <!-- h.w : take input of percentage and check grades of student's percentage using nested if 
+          check grades of student's percentage using else if   -->
+
+</body>
+</html>

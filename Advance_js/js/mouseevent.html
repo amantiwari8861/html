@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun()
+        {
+           // alert("you have right clicked on me ");
+           // document.getElementById("in").style.color="red";
+            document.getElementById("in").style.color="red";
+        }
+		function col()
+		{
+			document.getElementById("in").style.color="green";
+		}
+		function clickz()
+		{
+			document.getElementById("in").style.color="pink";
+		}
+    </script>
+</head>
+<body>
+    <center>
+   <!-- <input type="button" id="in" oncontextmenu="fun();" value="Right click on me ">
+    <input type="button" id="in" onmouseover="fun();" value="Right click on me ">-->
+    <input type="button" id="in" oncontextmenu="clickz()"  value="Right click on me ">
+
+    </center>
+</body>
+</html>

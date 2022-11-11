@@ -1,0 +1,19 @@
+inline
+internal
+external
+printing methods
+variables 
+data types
+operators
+conditional statements
+switch and loops
+1D Array
+strings
+functions
+Navigation bar
+objects
+Dom styling
+events
+bootstrap css
+
+validation

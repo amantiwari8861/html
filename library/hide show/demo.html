@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript">
+        
+		$(document).ready(function(){
+            $(".conceal").click(function(){
+                $("h3").hide();
+            });
+        });
+		
+	$(document).ready(function(){
+            $(".conceal").click(function(){
+                $("h3").show(2000);
+            });
+        });
+		
+	<!-- $(document).ready(function(){ -->
+            <!-- $(".view").click(function(){ -->
+                <!-- $("h3").show(2000); -->
+            <!-- }); -->
+        <!-- }); -->
+		
+		
+        </script>
+</head>
+
+<body>
+    <h3>this text is show and hidden</h3></br>
+    <button class="conceal">hide</button>
+    <button class="view">show</button>
+	
+</body>
+</html>

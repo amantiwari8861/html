@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function draw()
+        {
+           var canvas=document.getElementById("can");
+            var ctx=canvas.getContext("2d");
+            var img=new Image();
+            img.src="image.jpg";
+            img.onload=function(){
+                ctx.drawImage(img,10,10,100,200);
+            }
+        }
+    </script>
+
+</head>
+<body onload="draw()">
+    <img src="C:/Users/Aman/Desktop/html 10-11/js/ea20.png" height="400px" width="400px">
+    <canvas id="can" height="600" width="800" style="background-color: chartreuse;">unsupport</canvas>
+</body>
+</html>

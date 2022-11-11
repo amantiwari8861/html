@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box1{
+            display: inline-block;
+            /* background-color: rgb(99, 251, 198); */
+            /* height: 300px;
+            width: 300px; */
+            /* border-radius: 100%; */
+            position: relative;
+            animation: round 2s  infinite ;
+            animation-timing-function: ease-in;
+        }
+        /* .box1:hover{
+            background-color: blueviolet;
+            transform: rotate(360deg); */
+            /* transform: translate(120px,500px); */
+            /* transform: translate3d(120px,500px,-50px);*/
+            /* transform:rotateX(360deg); */
+            /* transform:rotateY(360deg); */
+            /* transition: transform 4s;
+        } */
+        .line{
+            position: absolute;
+            display: inline-block;
+            height: 300px;
+            width: 10px;
+            background-color:black;
+            color: white;
+            left: 145px;
+        }
+        .line1{
+            transform: rotate(80deg);
+        }
+        .line2{
+            transform: rotate(120deg);
+        }
+        .line3{
+            transform: rotate(120deg);
+        }
+        .line4{
+            transform: rotate(180deg);
+        }
+        @keyframes round {
+            to{
+                /* transform: rotate(0deg); */
+            }
+            from
+            {
+                transform: rotate(360deg);
+                transition: transform 4s;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <span class="box1">Hello Aman</span> -->
+    <!-- <span class="box1" >
+        <span class="line line1">1</span>
+        <span class="line line2">2</span>
+        <span class="line line3">3</span>
+        <span class="line line4">4</span>
+    </span> -->
+
+    <span class="box1" style="font-size:128px;"><i class="fa-solid fa-person"></i></span>
+</body>
+</html>

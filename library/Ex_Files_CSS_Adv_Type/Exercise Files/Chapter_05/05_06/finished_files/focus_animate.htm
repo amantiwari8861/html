@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS animations</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="_scripts/jquery.lettering.js"></script>
+    <script>
+        $(document).ready(function() {                  
+            $(".focus").lettering();
+        });
+    </script>
+<style>
+div {
+    background: black;
+    padding: 2em;
+    }
+p {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align:center;
+    }
+span {
+    color: rgba(255,255,255,1);
+    position: relative;
+    }
+.char1 {
+    -webkit-animation: getfocus 4.8s linear 0s infinite alternate;
+    animation: getfocus 4.8s linear 0s infinite alternate;
+    }
+.char2 {
+    -webkit-animation: getfocus 3.8s ease 0s infinite alternate;
+    animation: getfocus 3.8s ease 0s infinite alternate;
+    }
+.char3 {
+    -webkit-animation: getfocus 5.4s ease 0s infinite alternate;
+    animation: getfocus 5.4s ease 0s infinite alternate;
+    }
+.char4 {
+    -webkit-animation: getfocus 4.4s ease-out 0s infinite alternate;
+    animation: getfocus 4.4s ease-out 0s infinite alternate;
+    }
+.char5 {
+    -webkit-animation: getfocus 5.3s linear 0s infinite alternate;
+    animation: getfocus 5.3s linear 0s infinite alternate;
+    }
+.char6 {
+    -webkit-animation: getfocus 4.2s ease-in 0s infinite alternate;
+    animation: getfocus 4.2s ease-in 0s infinite alternate;
+
+    }
+.char7 {
+    -webkit-animation: getfocus 5.9s linear 0s infinite alternate;
+    animation: getfocus 5.9s linear 0s infinite alternate;
+    }
+.char8 {
+    -webkit-animation: getfocus 4.8s ease 0s infinite alternate;
+    animation: getfocus 4.8s ease 0s infinite alternate;
+    }
+.char9 {
+    -webkit-animation: getfocus 5s linear 0s infinite alternate;
+	animation: getfocus 5s linear 0s infinite alternate;
+    }
+.char10 {
+    -webkit-animation: getfocus 4.6s linear 0s infinite alternate;
+    animation: getfocus 4.6s linear 0s infinite alternate;
+    }
+.char11 {
+    -webkit-animation: getfocus 5.8s linear 0s infinite alternate;
+	animation: getfocus 5.8s linear 0s infinite alternate;
+
+    }
+.char12 {
+    -webkit-animation: getfocus 6s linear 0s infinite alternate;
+	animation: getfocus 6s linear 0s infinite alternate;
+    }
+.char13 {
+    -webkit-animation: getfocus 5.5s ease 0s infinite alternate;
+	 animation: getfocus 5.5s ease 0s infinite alternate;
+    }
+
+@-webkit-keyframes getfocus {
+       from {
+            color:rgba(255,255,255,0);
+            text-shadow: 0px 0px 1em #fff;
+        }
+        to {
+            color:rgba(244,241,208,0.9);
+            text-shadow: 0px 0px 0.1em #fff;
+        }
+        
+    }
+@keyframes getfocus {
+       from {
+            color:rgba(255,255,255,0);
+            text-shadow: 0px 0px 1em #fff;
+        }
+        to {
+            color:rgba(244,241,208,0.9);
+            text-shadow: 0px 0px 0.1em #fff;
+        }
+        
+    }
+</style>
+</head>
+<body>
+    <h1>Animating text</h1>
+    <div>
+    <p class="focus">Stay focused!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.cycle2.min.js"></script
+>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 Responsive Navbar</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ 
+<body>
+<div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand" style="margin-top:7px;"><font size="5">Electro Communication</font>
+			</a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" style="margin-top:7px;" >
+                <li class="active"><a href="index.html"><font size="5">Home</font></a></li>
+                <li><a href="#"><font size="5">Profile</font></a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><font size="5">Messages</font> <b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="margin-top:7px;">
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Drafts</a></li>
+                        <li><a href="#">Sent Items</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Trash</a></li>
+                    </ul>
+                </li>
+            </ul>
+						<ul class="nav navbar-nav" style="margin-left:200px;margin-top:5px;"">
+			 <li class="dropdown">
+			 
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><font size="5">Mobiles</font> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="samsung.html">Samsung</a></li>
+                        <li><a href="oppo.html">Oppo</a></li>
+                        <li><a href="apple.html">Apple</a></li>
+                        <li><a href="mi.html">Xiaomi Redmi</a></li>
+		</ul>	</li> 
+			
+			
+			<li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><font size="5">Electronics</font><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Led Tv</a></li>
+                        <li><a href="#">Refrigerator</a></li>
+                        <li><a href="#">Washing Machine</a></li>
+                        
+			</ul></ul>
+			
+
+            <ul class="nav navbar-nav navbar-right" style="margin-right:100px;margin-top:7px;">
+                <h4><b><li><input type="button" value="Login" onclick="ok(1)"> </li></h4>
+            </ul>
+        </div>
+ 
+ </nav>
+
+</div><!----------z------------>
+
+	<div class="preloader">
+		<div class="blobs">
+			<div class="blob-center"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<defs>
+			    <filter id="goo">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			      <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+			      <feBlend in="SourceGraphic" in2="goo" />
+			  	</filter>
+			</defs>
+		</svg>
+	</div>

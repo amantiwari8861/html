@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function update(value2abc) {
+           document.getElementById('result').value+=value2abc;
+        }
+        function evaluate2() {
+            var x= document.getElementById('result').value;
+            var y=eval(x);
+            document.getElementById('result').value="eqn: "+x+" = "+y;
+        }
+        function clear2() {
+            document.getElementById('result').value=" ";
+        }
+        function vback() {
+           var al= document.getElementById('result').value;
+           document.getElementById('result').value=al.substr(0,al.length-1);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="result">
+        <input type="button" value="1" onclick="update('1');">
+        <input type="button" value="2" onclick="update('2');">
+        <input type="button" value="C" onclick="clear2();">
+        <input type="button" value="<-" onclick="vback();">
+        <input type="button" value="00" onclick="update('00');">
+        <input type="button" value="+" onclick="update('+');">
+        <input type="button" value="calculate" onclick="evaluate2();">
+
+    </div>
+</body>
+</html>

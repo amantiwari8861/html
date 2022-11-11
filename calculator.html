@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcu.css">
+    <script>
+        function update(var2) {
+            document.getElementById('result').value+=var2;
+        }
+        function calcu() {
+         var result=eval(document.getElementById('result').value);   
+        document.getElementById('result').value=result;
+        }
+        function cl() {
+            // document.getElementById('result').value="";    
+            var dat3=document.getElementById('result').value;
+            document.getElementById('result').value=dat3.substr(0,dat3.length-1);            
+        }
+        function theme() {
+            document.getElementById('tabl').style.backgroundColor="black";            
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="child">
+            <input type="button" value="Dark/Light" class="btn" onclick="theme();">
+            <table border="1" id="tabl">
+                <tr>
+                    <td colspan="4"><input type="text" id="result"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="btn" value="1"  onclick="update('1');">
+                        <input type="button" class="btn" value="2"  onclick="update('2');">
+                        <input type="button" class="btn" value="3"  onclick="update('3');">
+                        <input type="button" class="btn" value="+"  onclick="update('+');">
+                    </td>
+                </tr><tr>
+                    <td>
+                        <input type="button" class="btn" value="4"  onclick="update('4');">
+                        <input type="button" class="btn" value="5"  onclick="update('5');">
+                        <input type="button" class="btn" value="6"  onclick="update('6');">
+                        <input type="button" class="btn" value="-"  onclick="update('-');">
+                    </td>
+                </tr><tr>
+                    <td>
+                        <input type="button" class="btn" value="7"  onclick="update('7');">
+                        <input type="button" class="btn" value="8"  onclick="update('8');">
+                        <input type="button" class="btn" value="9"  onclick="update('9');">
+                        <input type="button" class="btn" value="/"  onclick="update('/');">
+                    </td>
+                </tr><tr>
+                    <td>
+                        <input type="button" class="btn" value="C"  onclick="cl();">
+                        <input type="button" class="btn" value="0"  onclick="update('0');">
+                        <input type="button" class="btn" value="."  onclick="update('.');">
+                        <input type="button" class="btn" value="X"  onclick="update('*');">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="button" value="Calculate" id="calculate" onclick="calcu();"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

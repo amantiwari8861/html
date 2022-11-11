@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function validate()
+    {
+        var fname=document.getElementById("fname").value;
+        if(fname=="")
+        {
+            alert("enter the name");
+        }
+       /* else{
+            alert("carry on");
+        }*/
+    }
+    </script>
+</head>
+<body>
+    <div id="mydiv">
+        <!--<form action="" method="POST" name="myForm" onsubmit="return validate()" >-->
+		<form >
+                <input type="text" name="fname" id="fname" pattern="[A-Z]">
+                <input type="submit" onclick="validate()" value="submit">
+
+        </form>
+    </div>
+</body>
+</html>

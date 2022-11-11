@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body onclick="xyz()">
+    
+<!-- <h1 id="abc" onclick="xyz()">Lorem ipsum dolor sit amet.</h1> -->
+<div class="cl2">Lorem ipsum dolor sit amet.</div>
+<div class="cl2">Lorem ipsum dolor sit amet.</div>
+<div class="cl2">Lorem ipsum dolor sit amet.</div>
+</body>
+<script>
+    function xyz(){
+    // var head1=document.getElementById("abc");
+    // // alert(head1);
+    // var head1=document.querySelector("#abc");
+    // head1.style.color="red";
+    // head1.style.backgroundColor="greenyellow";
+
+    var data2=document.querySelectorAll(".cl2");
+    data2[0].style.color="red";
+    data2[1].style.color="green";
+    data2[2].style.color="yellow";
+
+    }
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="_scripts/jquery.lettering.js"></script>
+     <script>
+        $(document).ready(function() {                  
+            $(".kern").lettering();
+        });
+    </script>
+<style>
+	.kern {
+		font-size: 5em;
+		font-family: Georgia, Times, serif;
+		text-align: center;
+	}
+	.char2 {
+		margin-left: -0.02em;
+	}
+	.char5 {
+		margin-right: 0.1em;
+	}
+	.char7 {
+		margin-left: -0.05em;
+	}
+</style>
+</head>
+<body>
+    <h1>Working with lettering.js</h1>
+    <p class="kern">Kern me!</p>
+</body>
+</html>

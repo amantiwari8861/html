@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateddd()
+        {
+            var a,b,c,d;
+            b=prompt("enter the second no.");
+            a=document.getElementById("abc").value;
+            c=parseInt(document.getElementById("xyz").value);
+            /*a=50;
+            b=80;*/
+            d=a*b*c;
+           // document.getElementById("result").innerHTML+="hii"+c;
+            //alert(c);
+            //var abc="hello sir";
+          //  alert("are you sure to confirm ?");
+          //confirm("are you sure to confirm ?");
+         // prompt("are you sure to confirm ?");
+        // alert(abc);
+        //alert(d);
+        document.getElementById("result").innerHTML="=&nbsp;&nbsp;"+d;
+		console.log(d);
+		console.error("this is a error");
+		console.warn("this is a warning");
+        }
+    </script>
+</head>
+<body>
+    <div style="justify-content:center;">
+        <p>Welcome to my website !</p>
+        <input type="number" id="abc">
+        <input type="text" id="xyz">
+        <p >Result &nbsp;<span id="result"></span></p>
+        <button  onclick="validateddd();">Submit</button>
+      <!-- 
+                  
+ <button onclick="validate();">Confirm </button>
+        <input type="button" value="Confirm2" onclick="validate();"-->
+    </div>
+</body>
+</html>

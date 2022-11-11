@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific_Cal</title>
+    <link rel="stylesheet" type="text/css" href="design.css"></link>
+    <script type="text/javascript" src="cal.js"></script>
+</head>
+<body>
+    <div class="main">
+        <center><h2>Scientific Calculator!</h2></center>
+        <form name="myform">
+            <input type="text" name="textview" class="textview"placeholder="A" id="a1"><br>
+            <input type="text" name="textview" class="textview" placeholder="B" id="b1" ><br>
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="button symbol blue" value="Sqrt" onclick="insertOp0()"></td>
+                <td><input type="button" class="button symbol blue" value="^" onclick="insertOp1()"></td>
+                <td><input type="button" class="button symbol blue" value="/" onclick="insertOp2()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button symbol blue" value="*" onclick="insertOp3()"></td>
+                <td><input type="button" class="button symbol blue" value="-" onclick="insertOp4()"></td>
+                <td><input type="button" class="button symbol blue" value="+" onclick="insertOp5()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button symbol blue" value="sin" onclick="insertOp6()"></td>
+                <td><input type="button" class="button symbol blue" value="cos" onclick="insertOp7()"></td>
+                <td><input type="button" class="button symbol blue" value="tan" onclick="insertOp8()"></td>
+            </tr>
+        </table>
+    </div>
+</body>

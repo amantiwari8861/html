@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function draw() {
+    var can=document.getElementById("can");
+    var ctx=can.getContext('2d');
+    ctx.rect(20,20,50,50);
+    ctx.strokeStyle="green";
+    ctx.stroke();
+    ctx.fillStyle='red';
+    ctx.fillRect(50,50,60,60);
+    ctx.shadowBlur=10;
+    ctx.shadowColor="blue";
+    ctx.strokeStyle="pink";
+    ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+    ctx.fillRect(70,70,60,60);
+    ctx.strokeRect(90,90,60,60);
+    ctx.fillRect(140,140,60,60);
+    ctx.clearRect(160,160,20,20);
+    var grad=ctx.createLinearGradient(0,0,170,0);
+grad.addColorStop(0,"blue");
+grad.addColorStop("0.5","yellow");
+grad.addColorStop(1,"red");
+ctx.fillStyle=grad;
+ctx.fillRect(200,200,180,180);
+
+    }
+    </script>
+</head>
+<body onload="draw()">
+    <canvas id="can" height="300" width="600" style="border: 2px solid black;"></canvas>
+</body>
+</html>

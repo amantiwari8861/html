@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function timez()
+    {
+        var mon=["JAN","FEB","MARCH","APRIL","MAY","june"];
+        // var time=new Date();
+        // var time=new Date(1999,11,22,10,30,5,2);
+        // var time=new Date(1999,3);
+        // var time=new Date("2020 4 june 15:45");
+        //  var time=new Date("2020");
+        var time=new Date(2020,3);
+        var Day=time.getDate();
+        var month=time.getMonth();// 5
+        var yr=time.getFullYear();
+        var now=Date.now();
+        var today=new Date(now);
+        document.getElementById("para").innerHTML+=Day + "/" + mon[month] + "/"+yr+today;
+    }
+    </script>
+</head>
+<body onload="timez()">
+    <div>
+        <p id="para"></p>
+    </div>
+</body>
+</html>

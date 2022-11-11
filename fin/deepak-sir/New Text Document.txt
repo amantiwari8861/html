@@ -1,0 +1,114 @@
+Course Overview
+Hello React Native
+What is React Native?
+What does it do for us? Why choose it?
+Pros and cons
+Architecture
+Sharing with web projects
+What React Native code looks like
+Leveraging your React knowledge
+React and Redux reviews (when needed)
+Redux reminder
+Reducers, actions, state, store, and middleware
+React reminder
+SFCs vs class-based components
+Composition
+JSX structure and rules
+props
+state
+Controlled and uncontrolled components
+Virtual DOM vs the real DOM
+The Development Process
+Where do I even start?
+react-native vs. create-react-native-app
+Which is better for given situations
+The React Native team's recommendations
+What is expo?
+Creating a new React Native app
+How to run it on a tethered device
+How to run it on a wireless device
+How to run it in an Android emulator
+How to run it on an iOS simulator
+Debugging in a browser window
+Logging, breakpoints, stepping through
+YellowBoxes and RedBoxes
+Single-value Controls
+Components overview
+Categories of components
+Text
+Text props and events
+TextInput
+props and events and the event object
+Image
+Differences between HTML and React Native images
+Reserving space for them
+Local images vs remote images
+resizeMode
+Platform-specific Development
+How can we develop differently on the different platforms?
+Why would we ever do this?
+Technical roadblocks
+The DatePicker - iOS vs Android
+Using the Platform module
+Layout Components
+Components review
+View
+SafeAreaView
+ScrollView
+Pinch-to-zoom
+KeyboardAvoidingView
+How to create modal views
+Controlling the OS's status bar
+Flexbox for Native Layouts
+Why flexbox?
+Where it came from
+Flexbox on the web is NOT flexbox on native
+Containers and items
+flexDirection
+flexBasis vs width/height
+flexShrink, flexGrow
+The flex shorthand
+justifyContent and alignContent
+flexWrap
+Styling React Native Apps
+How React Native styles differ from CSS
+How to apply styles
+How to control style inheritance
+Style arrays
+Four methods of defining styles
+Common properties
+Cross-platform fonts
+Conditional and programmatic styles
+Navigation
+What is navigation, really?
+How to get React Navigation
+The three types of navigators
+StackNavigator
+Routing object
+Navigation config
+How to pass params when navigating
+TabNavigators
+Three types of TabNavigators
+How to set icons
+DrawerNavigator
+Examples and demos
+Ajax in React Native
+Why it must be different on a device
+The fetch API
+How to show a loading indicator
+How to make requests and populate affordances
+Security in a native environment
+List Components
+Components review
+Pickers
+FlatList
+SectionList
+Touchables and Buttons
+The Button API
+Button events and props
+Why touchables?
+TouchableWithoutFeedback
+TouchableNativeFeedback
+TouchableOpacity
+TouchableHighlight
+How to disable a touchable

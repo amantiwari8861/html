@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Providing fallbacks</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+<style>
+body {
+    background: url(_images/parchment.jpg) repeat;
+    width: 1000px; 
+    padding-top:4em;
+    }
+/*make design flexible if lettering.js isn't supported*/
+.no-js body {
+	width: 90%;
+}
+/*base styles*/
+blockquote {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 100%;
+    margin-left:30px;
+    }  
+p {
+    margin:0;
+    padding:0;
+    }
+/*non javascript fallback styles*/
+.no-js p:before {
+	content: "\2018";
+}
+.no-js p:after {
+	content: "\2019";
+}
+.no-js .quote {
+	font-size: 4.5em;
+}
+cite {
+    font-family:smythe, Georgia, serif;
+    font-size: 2em;
+    font-style: normal;
+    text-align: right;
+    display:block;
+    color: rgb(167,113,40);
+    }
+cite span {
+    font-style:italic;
+    }
+.quote {
+    font: 32px ultra, Arial Black, Arial, sans-serif;
+    text-transform: uppercase;
+	color: rgb(54,82,127);
+    }
+</style>
+</head>
+<body>
+    <h1>Poster design with Modernizr</h1>
+    <blockquote><p class="quote">I can&rsquo;t go back &amp; I don&rsquo;t want to because all my mistakes brought me to you</p>
+    <cite>Avett Brothers -<span>All My Mistakes</span></cite></blockquote>
+</body>
+</html>

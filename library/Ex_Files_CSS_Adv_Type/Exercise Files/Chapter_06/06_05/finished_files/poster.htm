@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Providing fallbacks</title>
+    <link href="_css/base.css" rel="stylesheet" type="text/css">
+     <script src="_scripts/modernizr.js"></script>
+         <script>
+//use the modernizr load to load up external scripts. When the scripts finish loading, run lettering.js. Check support of web fonts, if supported call for Edge Fonts
+Modernizr.load([
+{
+    load:  
+        'http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'
+},
+{
+	 load: 
+        '_scripts/jquery.lettering.js',
+		complete: function() {
+			$(document).ready(function() { $(".quote").lettering('words').children('span').lettering().children('span').contents().wrap('<span>');
+        });
+		}
+}
+]); 
+</script>
+<style>
+body {
+    background: url(_images/parchment.jpg) repeat;
+    width: 1000px; 
+    padding-top:4em;
+    }
+/*make design flexible if lettering.js isn't supported*/
+.no-js body {
+	width: 90%;
+}
+/*base styles*/
+blockquote {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 100%;
+    margin-left:30px;
+    }  
+p {
+    margin:0;
+    padding:0;
+    }
+/*non javascript fallback styles*/
+.no-js p:before {
+	content: "\2018";
+}
+.no-js p:after {
+	content: "\2019";
+}
+.no-js .quote {
+	font-size: 4.5em;
+}
+cite {
+    font-family:smythe, Georgia, serif;
+    font-size: 2em;
+    font-style: normal;
+    text-align: right;
+    display:block;
+    color: rgb(167,113,40);
+    }
+.js cite {
+    font-size: 45px;
+	position: relative;
+    top: -1em;
+    }
+cite span {
+    font-style:italic;
+    }
+.quote {
+    font: 32px ultra, Arial Black, Arial, sans-serif;
+    text-transform: uppercase;
+	color: rgb(54,82,127);
+    }
+span[class^="word"] {
+    position:relative;
+    }
+span[class^="char"] {
+    padding:0 0.1em;
+    margin-right:0.03em;
+    position: relative;
+    background: url(_images/spatter.png) no-repeat,-webkit-linear-gradient(-45deg, rgba(66,66,66,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 48%,rgba(103,103,103,1) 76%,rgba(142,142,142,1) 100%);
+    background: url(_images/spatter.png) no-repeat,linear-gradient(-45deg, rgba(66,66,66,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(81,81,81,1) 48%,rgba(143,143,143,1) 76%,rgba(192,192,192,1) 100%);
+    border-right: 2px solid rgb(42,42,42);
+    border-bottom:2px solid rgb(42,42,42);
+    display: inline-block;
+    line-height:1.2;
+    }
+span > span {
+    color: rgba(237,193,120,1);
+    }
+.char1 span {
+    background-position:left bottom;
+    }
+.char3 span {
+    background-position: center;
+    }
+.char4 span {
+    background-position:right bottom;
+    }
+.word1, .word2, .word3, .word4 {
+    font-size:64px;
+    }
+.word5 {
+    float: left;
+    }
+.word5 .char1 {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 256px;
+    line-height:0.9 ;
+    }
+.word6, .word7 {
+    font-size:96px;
+    }
+.word8, .word9 {
+    font-size: 96px;
+    font-family: bowlby-one-sc,sans-serif;
+    top: -0.1em;
+    }
+.word10 {
+    font-size: 109px;
+    margin-left:0.4em;
+    top: -0.3em;
+    font-family:bebas-neue, sans-serif;
+    }
+.word11 {
+    font-size: 109px;
+    font-family: bowlby-one-sc,sans-serif;
+    top: -0.3em;
+    }
+.word12 {
+    font-size:128px;
+    top: -0.3em;
+    float:left;
+    }
+.word13 {
+    font-size: 64px;
+    top: -0.7em;
+    }
+.word14 {
+    margin-left: 0.2em;
+    font-size: 51px;
+    top: -1.2em;
+    }
+.word15 {
+    font-size:64px;
+    top: -0.7em;
+    }
+.word14, .word15 {
+    font-family: bowlby-one-sc,sans-serif;
+    }
+.word16 {
+    font-size:96px;
+    margin-left:1.6em;
+    top: -1em;
+    }
+.word17 {
+    font-size:128px;
+    font-family: bowlby-one-sc,sans-serif;
+    top:-0.6em;
+    }
+.word4:after, .word7:after, .word9:after, .word11:after, .word13:after {
+    content:"\A"; 
+    white-space:pre;
+    }
+.word2 .char1, .word4 .char5, .word7 .char2, .word10 .char6,.word12 .char1, .word13 .char6, .word15 .char2{
+    font-size:.9em;
+    top:-0.01em;
+    background-position: right bottom;
+    }
+.word2 .char3, .word4 .char3, .word9 .char2, .word10 .char3, .word13 .char2, .word14 .char5, .word17 .char3 {
+    font-size:0.96em;
+    top: 0.04em;
+    background-position: center;
+    }
+.word8 .char2, .word10 .char4, .word13 .char3, .word13 .char7 {
+    background-position:right center;
+    }
+.word7 .char2 {
+    top: 0.01em;
+    }
+span.char2 {
+    background-position:right bottom;
+    }
+span.char1 {
+    background-position:center;
+    }
+</style>
+</head>
+<body>
+    <h1>Poster design with Modernizr</h1>
+    <blockquote><p class="quote">I can&rsquo;t go back &amp; I don&rsquo;t want to because all my mistakes brought me to you</p>
+    <cite>Avett Brothers -<span>All My Mistakes</span></cite></blockquote>
+</body>
+</html>
