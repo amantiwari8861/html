@@ -1,0 +1,1 @@
+alert("hello by external 1")
