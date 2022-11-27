@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array --> object
+        // let marks=new Array();
+        // marks[0]=10;
+        // marks[1]=15;
+        // marks[2]=19;
+        // marks.push(78);
+        // console.log(marks);
+        // document.write(marks);
+        // let person=["Aman","22/4/1999",32000,["drawing","maths","hindi","history"],45,1234566799];
+        // document.write(person)
+        // document.write(person[3][1]);
+        // let covidCases=[];
+
+        // for (let i = 0; i < 3; i++) 
+        // {
+        //     covidCases[i]=[];
+        //     for (let j = 0; j < 2; j++) 
+        //     {
+        //         covidCases[i][j]=prompt("enter the "+i+" state and "+j+" city cases");
+        //     }
+        // }
+
+        // for (let i=0;i<covidCases.length;i++) 
+        // {
+        //     for (let j = 0; j < covidCases[i].length; j++) 
+        //     {
+        //         document.write("in state "+i+"and "+j+" city there are "+covidCases[i][j]+" cases<br>");
+                
+        //     }
+            
+        // // }
+        //     let person={
+        //         "name":"Aman",
+        //         "salary":15000,
+        //         "age":23,
+        //         "aadhar":123456789,
+        //         "skills":["C","C++","java","Spring"]
+        //     };
+
+            // document.write(person);
+            // console.log(person);
+            // document.write(person.name+"<br>")
+            // document.write(person["name"]+"<br>")
+            // document.write(person[0]+"<br>")
+        // for (const key in person) 
+        // {
+        //     document.write(key+"  is "+person[key]+"<br>");            
+        // }
+        // document.write(person.length)
+        
+        let person={ //json object
+                "name":"Aman",
+                "salary":15000,
+                "age":23,
+                "aadhar":123456789,
+                "skills":["C","C++","java","Spring"],
+                "address":{
+                    "country":"india",
+                    "state":"delhi ncr",
+                    "city":"noida"
+                }
+            };
+
+            // console.log(person);
+            // for (const key in person)  //problem 
+            // {
+            //     let dta=person[key];
+            //     for (const k2 in dta) 
+            //     {
+            //        document.write(key+" : "+person[key]+"<br>");
+            //        document.write(k2+" : "+dta[k2]+"<br>");               
+
+            //     }                
+                   
+            // }
+            // for (const key in person)  //solution
+            // {
+            //     let dta=person[key];
+            //     document.write(key+" : "+person[key]+"<br>");
+            //     if (typeof dta === 'object') 
+            //     {
+            //         for (const k2 in dta) 
+            //         {
+            //             document.write("&nbsp;&nbsp;&nbsp;&nbsp;"+k2+" : "+dta[k2]+"<br>");               
+            //         }  
+            //     }
+            // }
+            let person2={ //js object
+                name:"Aman",
+                salary:15000,
+                age:23,
+                aadhar:123456789,
+                skills:["C","C++","java","Spring"],
+                address:{
+                    country:"india",
+                    state:"delhi ncr",
+                    city:"noida"
+                }
+            };
+
+            // document.write(person[name]) //undefined
+            // document.write(person2[name]) //undefined
+            // document.write(person)
+            // document.write(person2)
+            // document.write(JSON.stringify(person)+"<br>");
+            // document.write(JSON.stringify(person2));
+            let str=JSON.stringify(person2);
+            // document.write(typeof str+"<br>")
+            // document.write(str)
+
+            let personObj=JSON.parse(str);
+            document.write(typeof personObj+"<br>")
+            document.write(personObj)
+
+    </script>
+</body>
+</html>

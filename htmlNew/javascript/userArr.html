@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function inputArr()
+    {
+        let size=document.getElementById("s1").value;
+        let arr=[];
+        for(let i=0;i<size;i++)
+        {
+           arr.push(prompt("enter "+i+"th element")); 
+        }
+        document.getElementById("result").innerHTML+=arr;
+    }
+    </script>
+</head>
+<body> 
+    Enter size : <input type="text" id="s1">
+    <input type="button" onclick="inputArr()" value="click">
+    <br>
+    <h1 style="color:red;" id="result"></h1>
+</body>
+</html>

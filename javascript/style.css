@@ -1,0 +1,16 @@
+#tab1{
+    text-align: center;
+    width: 40%;
+    margin: 0px auto;
+}
+
+#tab1 tr:nth-child(2n+1)
+{
+    background-color: rgba(112, 110, 110, 0.969);
+}
+
+#tab1 tr:first-child
+{
+    background-color: black;
+    color: green;
+}
