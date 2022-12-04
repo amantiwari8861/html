@@ -23,8 +23,8 @@ function createTable()
         str+= "</tr>" ;
     }
     str+= "</table>" ;  
-
+    // document.write(str);//replacing old data of page
     result.innerHTML+=str;
+    // result.innerText+=str;
     document.body.innerHTML+=('<link rel="stylesheet" href="style.css">');
-
 }

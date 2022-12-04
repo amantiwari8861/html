@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+<script>
+
+// function greet() 
+// {
+//     document.write("Good Morning !");
+//     // alert("Good Morning !");
+// };
+// greet();
+
+// let fxn=function printName() {  document.write("Aman !"); }
+// let fxn=function () {  document.write("Aman !"); } //Anonymous function
+// let fxn= () => {  document.write("Aman ! "); }// Arrow function
+
+// fxn();
+// printName();//error
+
+//syntax : setInterval(callback,time(in milisecond));
+
+// setInterval(fxn,1000);
+
+// setInterval(()=>{
+//     document.write("Aman ! ");
+// },1000);
+let res=document.getElementById("result");
+
+let clock=setInterval(()=>{
+let dte=new Date();
+// res.innerHTML=dte+"<br>";
+res.innerHTML=dte.getDate() +"/"+ (dte.getMonth()+1)+"/"+dte.getFullYear() +" "+dte.getHours()+":"+dte.getMinutes()+":"+dte.getSeconds()+":"+dte.getMilliseconds();
+},1);
+
+function stop1() {
+    clearInterval(clock);
+}
+
+setTimeout(() => {
+    console.log("Hello");
+}, 1000);
+setTimeout(() => {
+    console.log("Hello 2.0");
+}, 2000);
+
+
+
+</script>
+<!-- <button onclick="greet()">Click</button> -->
+
+<button onclick="stop1()">stop</button>
+</body>
+</html>

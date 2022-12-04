@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let users={
+            name:"Aman",
+            salary:16000,
+            gender:'M'
+        }
+    </script>
+</head>
+<body>
+    
+<script>
+    // document.write(users)
+    // document.write(JSON.stringify(users))
+    // let obj=JSON.stringify(users);
+    // document.write(obj);
+    // console.log(obj);
+    // console.log(users);
+
+    // let jstr=JSON.stringify(users);
+    // document.write(jstr);
+    // console.log(jstr);
+
+    // let obj3=JSON.parse(jstr);
+    // document.write(obj3);
+    // console.log(obj3);
+
+    for(let e in users)
+    {
+        document.write("key :"+e+"<br>");
+        document.write("value :"+users[e]+"<br>");
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
