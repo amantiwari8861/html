@@ -7,16 +7,25 @@
     <title>Document</title>
     <script>
         let users={
-            name:"Aman",
-            salary:16000,
-            gender:'M'
+            name:"Aman Tiwari",
+            salary:300000,
+            gender:'M',
+            showDetails:function(){
+                    document.write("name "+this.name+"<br>salary "+this.salary+"<br>gender "+this.gender);
+                }
         }
     </script>
 </head>
 <body>
-    
-<script>
+    <script>
     // document.write(users)
+    // document.write("<br>");
+    // for(let e in users)
+    // {
+    //     document.write("key :"+e+"<br>");
+    //     document.write("value :"+users[e]+"<br>");
+    // }
+    // document.write(users.salary);
     // document.write(JSON.stringify(users))
     // let obj=JSON.stringify(users);
     // document.write(obj);
@@ -28,17 +37,17 @@
     // console.log(jstr);
 
     // let obj3=JSON.parse(jstr);
-    // document.write(obj3);
+    // document.write(obj3); //[object Object]
     // console.log(obj3);
 
-    for(let e in users)
-    {
-        document.write("key :"+e+"<br>");
-        document.write("value :"+users[e]+"<br>");
-    }
-
+    // document.write("<br>");
+    // document.write(obj3.name);
+    // document.write(obj3.salary);
+    users.showDetails();
 
 </script>
+
+<br>
 
 
 

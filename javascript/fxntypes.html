@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //type 1
+        function greet() {
+            document.write("Good morning");
+        }
+        //type 2
+        function add1() {
+            num1=10,num2=30;
+            return num1+num2;
+        }
+        //type 3
+        function add2(num1,num2) {
+            document.write("the sum is "+(num1+num2));
+        }
+        //type 4
+        function add3(num1,num2) {
+            return num1+num2;
+        }
+
+    </script>
+</head>
+<body>
+
+    <script>
+        greet();
+        console.log("the sum by type 2 "+add1());
+        add2(45,23);
+        console.log("the addition is "+add3(56,78));
+    </script>
+    
+</body>
+</html>
