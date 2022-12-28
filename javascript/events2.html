@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function anything() 
+        // {
+        //     let demo1=document.getElementById("demo");
+        //     demo1.style.color="green";
+        //     demo1.style.backgroundColor="black";
+        // }
+    </script>
+</head>
+
+<body>
+
+    <!-- <h1 onclick="anything();" id="demo">Welcome to my website!</h1> -->
+    <h1 id="demo">Welcome to my website!</h1>
+
+    <marquee onmouseover="this.stop()" onmouseout="this.start()" ><h1>Hello Everyone !!</h1></marquee>
+
+    <input type="text" id="inp" oninput="fxn()">
+    <div id="res"></div>
+
+</body>
+<script>
+
+    // function doSomething() {
+    //     demo.style.color = "green";
+    //     demo.style.backgroundColor = "black";
+    // }
+    // let demo = document.getElementById("demo")
+    // // demo.addEventListener("click",doSomething);
+    // demo.addEventListener("dblclick", () => {
+    //     demo.style.color = "green";
+    //     demo.style.backgroundColor = "black";
+    // });
+
+    // demo.onclick=doSomething;
+    // demo.onclick=()=>{
+    //     demo.style.color = "green";
+    //     demo.style.backgroundColor = "black";  
+    // };
+
+        function fxn() {
+           let inpvalue=document.getElementById("inp").value;
+           document.getElementById("res").innerHTML=inpvalue;
+        }
+</script>
+
+</html>

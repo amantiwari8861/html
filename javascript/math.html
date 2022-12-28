@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // document.write(Math.PI+"<br>");
+        // document.write(Math.SQRT2+"<br>");
+        // document.write(Math.LN10+"<br>");
+        // document.write(Math.abs(-13)+"<br>");
+        // document.write(Math.ceil(56.0001)+"<br>");
+        // document.write(Math.floor(56.999)+"<br>");
+        // document.write(Math.pow(2.5,3)+"<br>");
+        // document.write(Math.min(67,3,23,245,255,67,23)+"<br>");
+        // document.write(Math.max(67,3,23,245,255,67,23)+"<br>");
+        // document.write(Math.log(2)+"<br>");
+        // document.write(Math.sqrt(3)+"<br>");
+        // document.write(Math.round(1.000001)+"<br>");
+        // document.write(Math.round(1.5)+"<br>");
+        // document.write(Math.round(1.98)+"<br>");
+        // document.write(Math.random()+"<br>");
+
+        // for (let i = 1; i <= 10; i++) {
+        //     let val = Math.floor(Math.random() * 10 + 1);
+        //     document.write(val + "<br>");
+        // }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        for (let i = 0; i < 255; i++) 
+        {
+            document.body.innerHTML+=`<h1 style='color:${getRandomColor()}'>Welcome !</h1>`;
+        }
+        </script>
+</body>
+
+</html>
+
+<!-- 
+event
+dom 
+validation
+class
+cookies
+exception handling
+hoisting 
+-->

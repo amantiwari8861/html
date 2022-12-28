@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+<!-- <h1 onclick="greet()" id="m1">Hello everyone!!</h1> -->
+<!-- <h1 ondblclick="greet()" id="m1">Hello everyone!!</h1> -->
+<h1 onmouseover="greet()" id="m1">Hello everyone!!</h1>
+<!-- <h1  id="m1">Hello everyone!!</h1> -->
+<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20%"><h1>Welcome everyone to my website!</h1></marquee>
+</body>
+<script>
+    // function greet() {
+    //     let m1obj=document.getElementById("m1");
+    //     m1obj.style.color="Greenyellow";
+    //     m1obj.style.backgroundColor="black";
+    //     m1obj.style.textAlign="center";
+    //     m1obj.style.border="1px solid red";
+    // }
+    let m1obj=document.getElementById("m1");
+    // m1obj.addEventListener("click",()=>{
+    //     m1obj.style.color="Greenyellow";
+    //     m1obj.style.backgroundColor="black";
+    //     m1obj.style.textAlign="center";
+    //     m1obj.style.border="1px solid red";
+    // });
+    // m1obj.onclick=()=>{
+    //     m1obj.style.color="Greenyellow";
+    //     m1obj.style.backgroundColor="black";
+    //     m1obj.style.textAlign="center";
+    //     m1obj.style.border="1px solid red";
+    // }
+    m1obj.onclick=doSomething;
+
+    function doSomething() {
+        m1obj.style.color="Greenyellow";
+        m1obj.style.backgroundColor="black";
+        m1obj.style.textAlign="center";
+        m1obj.style.border="1px solid red";
+    }
+</script>
+</html>
