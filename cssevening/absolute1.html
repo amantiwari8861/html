@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        /* .parent>img{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        } */
+        .parent>video{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            object-fit: cover;
+        }
+        .child{
+            position: absolute;
+            top: 50px;
+            left: 10%;
+            height: 80vh;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.695);
+            /* background-color: rgba(245, 245, 245, 0.584); */
+            border-radius: 15px;
+            color: whitesmoke;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+        <!-- <img src="IMG20200630060825.jpg" id="back1" alt=""> -->
+        <video src="D:\pictures\PublicContent\VID20200710080335.mp4" autoplay muted></video>
+
+        <div class="child">
+            <h1>Welcome to my Website !!</h1>
+        </div>
+    </div>
+</body>
+</html>

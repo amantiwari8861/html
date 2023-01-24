@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #mybox span:nth-of-type(2)
+        {
+            color:red;
+        }
+    </style> -->
+</head>
+<body>
+    
+
+    <div id="mybox">
+        <span id="elem1">Element 1</span><br>
+        <span id="elem2">Element 2</span><br>
+        <span id="elem3">Element 3</span><br>
+        <span id="elem4">Element 4</span><br>
+        <span id="elem5">Element 5</span><br>
+        <span id="elem6">Element 6</span><br>
+    </div>
+</body>
+<script>
+    // let boxobj=document.querySelector("#mybox");
+    // console.log(boxobj.childNodes);
+
+    // boxobj.childNodes[4].innerHTML+="Hello Aman";
+
+    // let second=document.querySelector("#mybox span:nth-of-type(4)");
+    // second.style.backgroundColor="greenyellow";
+    // console.log(second);
+
+    let elemobj=document.querySelectorAll("#mybox span");
+    // console.table(elemobj);
+
+    for (let i = 0; i < elemobj.length; i++) {
+        let colour="#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0");
+        elemobj[i].style.color=colour;
+    }
+
+</script>
+</html>

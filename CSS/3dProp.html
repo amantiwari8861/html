@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        .con{
+            margin-top: 100px;
+            margin-left: 100px;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            font-size: 64px;
+            perspective: 20px;
+        }
+        @keyframes anim {
+            0%{
+                background:linear-gradient(0deg,aqua,yellow);
+            }
+            100%{
+                background:linear-gradient(60deg,aqua,yellow);
+                /* width: 600px; */
+                /* rotate: 360deg; */
+                /* transform: rotateX(90deg); */
+                /* transform: rotateX(360deg); */
+                /* transform: rotateY(90deg); */
+                /* transform: rotateY(-360deg); */
+                transform: rotateZ(360deg);
+            }
+        }
+        .con:hover
+        {
+            animation: anim 5s linear infinite ;
+            /* animation:unset ; */
+            /* animation:inherit ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <!-- Hello there -->
+        <img src="../cssevening/mobile2.png" height="300px" width="300px">
+
+    </div>
+
+    <h1 class="animate__animated animate__backInRight">Welcome to my Website</h1>
+
+</body>
+</html>

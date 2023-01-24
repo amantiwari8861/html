@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            position: relative;
+            /* transform: translate(100px,150px); */
+            /* transform: rotate(-60deg); */
+            /* transform: scale(1.2); */
+            animation-name: myanimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+        }
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 32px;
+            /* transform: translateX(-30px); */
+            /* transform: translate(-32px,-50px); */
+        }
+        @keyframes myanimation 
+        {
+            from{
+                top: 0px;
+                left: 0px;
+                /* border-radius: 50%; */
+
+            }
+            to{
+                top: 100px;
+                left:200px;
+                transform: rotate(-360deg);
+                border-radius: 100%;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box1"><span>hello</span></div>
+
+</body>
+
+</html>

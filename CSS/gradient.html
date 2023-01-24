@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*="box"] {
+            height: 200px;
+            width: 48%;
+            border: 2px solid green;
+            display: inline-block;
+        }
+
+        .box1 {
+            background-image: linear-gradient(rgb(255, 111, 0), yellow);
+        }
+
+        .box2 {
+            /* background-image: linear-gradient(60deg,pink 40%,skyblue 60%); */
+            /* background-image: radial-gradient(pink,skyblue,rgba(125, 58, 250, 0.838)); */
+            /* background-image: radial-gradient(circle,pink,skyblue,rgba(125, 58, 250, 0.838)); */
+            background-image: conic-gradient(from 90deg, pink, skyblue, rgba(125, 58, 250, 0.838));
+        }
+
+        #myimg,
+        .box1,
+        .box2 {
+            /* opacity:0.8 ;0-1 */
+            /* filter: none;
+            filter: blur(5px); */
+             /* filter: brightness(200%); */
+            /* filter: contrast(200%); */
+            /* filter: drop-shadow(8px 8px 10px gray); */
+            /* filter: grayscale(100%); */
+            /* filter: hue-rotate(180deg); */
+            /* filter: invert(100%); */
+            /* filter: opacity(30%); */
+            /* filter: saturate(3); */
+            /* filter: sepia(200%); */
+            filter: contrast(200%) brightness(150%); 
+        }
+    </style>
+    <meta http-equiv="refresh" content="2">
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <img src="D:\pictures\PublicContent\IMG_20201007_125327.jpg" height="500px" width="100%" id="myimg">
+
+</body>
+
+</html>

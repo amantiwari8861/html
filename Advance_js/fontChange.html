@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="dropdown" onchange="changeFontSize()" onclick="this.selectedIndex = 0;">
+        <option value="">--------- Change font Size -----------</option>
+        <option value="small">A-</option>
+        <option value="medium">A</option>
+        <option value="large">A+</option>
+    </select>
+<br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam placeat! Hic obcaecati minima quibusdam excepturi eveniet animi fuga itaque magnam, voluptatibus, exercitationem eum facilis asperiores nisi, vitae voluptatem suscipit?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam placeat! Hic obcaecati minima quibusdam excepturi eveniet animi fuga itaque magnam, voluptatibus, exercitationem eum facilis asperiores nisi, vitae voluptatem suscipit?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam placeat! Hic obcaecati minima quibusdam excepturi eveniet animi fuga itaque magnam, voluptatibus, exercitationem eum facilis asperiores nisi, vitae voluptatem suscipit?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam placeat! Hic obcaecati minima quibusdam excepturi eveniet animi fuga itaque magnam, voluptatibus, exercitationem eum facilis asperiores nisi, vitae voluptatem suscipit?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam placeat! Hic obcaecati minima quibusdam excepturi eveniet animi fuga itaque magnam, voluptatibus, exercitationem eum facilis asperiores nisi, vitae voluptatem suscipit?
+</body>
+<script>
+    function changeFontSize() 
+    {
+        let selected=document.getElementById("dropdown").value;
+        console.log(selected);
+        let fontsize=window.getComputedStyle(document.body).getPropertyValue("font-size");
+        console.log(fontsize);
+        let size=Number(fontsize.substr(0,fontsize.indexOf("px")));
+        console.log(size);
+        if (selected=="small") 
+        {
+            document.body.style.fontSize=(size-4)+"px";
+        }
+        else if(selected=="large")
+        {
+            document.body.style.fontSize=(size+4)+"px";
+        }
+        else
+        {
+            document.body.style.fontSize=16+"px";
+        }
+    }
+</script>
+</html>
