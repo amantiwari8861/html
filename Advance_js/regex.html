@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #namez:invalid
+        {
+            /* border-left: 5px solid red; */
+            outline:4px solid red;
+            border-radius: 3px;
+            border-style: none;
+        }
+        #namez:valid
+        {
+            /* border-left: 5px solid rgb(0, 255, 55); */
+            outline: 4px solid green;
+            border-radius: 3px;
+            border-style: none;
+        }
+    </style>
+</head>
+<body>
+    <noscript></noscript>
+        <form action="" method="get" onsubmit="return validateInp()">
+
+        <!-- Name : <input type="text" pattern="[A-Za-z @.]{3,}" id="namez" title="pls input valid name!"> -->
+        Name : <input type="text" id="namez" >
+        <button type="submit">Submit</button>
+
+        </form>
+</body>
+<script>
+
+function validateInp() 
+{
+    let nameobj=document.querySelector("#namez");
+    console.log(nameobj.value);
+
+    if (/[A-Za-z @.]{3,}/.test(nameobj.value)==true) 
+    {
+        alert("valid person!!");
+        return true;
+    } 
+    else 
+    {
+        alert("invalid person!!");
+        return false;
+    }
+    return false;
+}
+
+</script>
+</html>
