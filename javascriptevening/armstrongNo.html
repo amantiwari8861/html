@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1=prompt("enter a 3 digit number:");//string
+        if (num1.length<3 || num1.length>3) 
+        {
+            document.write("pls input 3 digit no. only ");
+        }
+        else
+        {
+            let rem,arm=0,num,original;
+            num=parseInt(num1);//number
+            original=num;
+            while (num>0) 
+            {
+                rem=num%10;
+                arm=arm+rem**3;
+                num=parseInt(num/10);
+            }
+            if (arm==original) 
+            {
+                document.write("this is armstrong no.");
+            }
+            else
+            {
+                document.write("this is not a armstrong no.");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
