@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let fruits=["apple","mango","banana","pineapple",100,78.788,true,new Date()];
+        // console.log(fruits);
+        // document.write(fruits[0]+"<br>");
+        // document.write(fruits[1]+"<br>");
+        // document.write(fruits[2]+"<br>");
+        // document.write(fruits[3]+"<br>");
+        // document.write(fruits[4]+"<br>");
+        // document.write(fruits[5]+"<br>");
+        // document.write(fruits[6]+"<br>");
+        // document.write(fruits[7]+"<br>");
+        // document.write(fruits);
+        // console.log(typeof fruits);
+
+        // for (let i = 0; i < fruits.length; i++) 
+        // {
+        //     document.write(fruits[i]+"<br>");            
+        // }
+        // for (const e of fruits) 
+        // {
+        //     document.write(e+"<br>");            
+        // }
+        // for (const e in fruits) 
+        // {
+        //     document.write("at index "+e+" value is "+fruits[e]+"<br>");
+        // }
+        // fruits.forEach(printVal);
+
+        // function printVal(e)
+        // {
+        //     document.write(e+"<br>");
+        // }
+        
+        // let fruits=[];
+        // let n=prompt("enter no. of fruits :");
+        // for (let i = 0; i < n; i++) 
+        // {
+        //     // fruits.push(prompt("enter fruit "+(i+1)));
+        //     fruits[i]=prompt("enter fruit "+(i+1));
+        // }
+        // document.write(fruits)
+
+        // let matrix=new Array(3);
+        let matrix=[];
+
+        alert("enter matrix values :");
+
+        for (let i = 0; i < 3; i++) 
+        {
+            matrix[i]=[];
+            for (let j = 0; j < 2; j++) 
+            {
+                matrix[i][j]=prompt("enter "+i+"th row "+j+"th column");
+            }
+        }
+
+        for (let i = 0; i < matrix.length; i++) //3
+        {
+            for (let j = 0; j < matrix[i].length; j++) //2
+            {
+               document.write(matrix[i][j]+"\t");
+            }
+            document.write("<br>");
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
