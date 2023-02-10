@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert("Hello Everyone !!");
+
+        //alert is a pre-defined function
+        //here we are creating our own function greet
+        //there are 4 types:
+        // No argument no return type
+        // No argument with return type
+        // with argument no return type
+        // with argument and return type
+
+        //no argument no return type
+        // function greet()
+        // {
+        //     // alert("Hello Everyone !!");
+        //     document.write("Hello sir !! <br>");
+        // }
+        
+        // No argument with return type
+        // function getPiValue()
+        // {
+        //     return 3.14;
+        // }
+        // alert("the value of pi is "+getPiValue());
+
+        // with argument no return type
+        // function greetThis(uname)
+        // {
+        //     if (uname=="Aman") 
+        //     {
+        //         document.write("Good Morning Aman Sir!!");
+        //     }
+        //     else
+        //     {
+        //         document.write("Hii "+uname);
+        //     }
+        // }
+        // greetThis("Aman");
+        // greetThis("Dolly");
+
+        // with argument and return type
+        function getCompliment(uname) 
+        {
+            if (uname=="Aman")
+            {
+               return uname+" Sir is best teacher !!";
+            }
+            else
+            {
+                return "I don't know who is "+uname;
+            }
+        }
+
+        function showInH1(uname)
+        {
+            document.getElementById("res").innerHTML=getCompliment(uname)
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- <button onclick="greet()" >Greet me</button> -->
+    <!-- reusability of code -->
+
+    <!-- <button onclick="greetThis('Aman')">Greet Aman</button>
+    <button onclick="greetThis('Dolly')">Greet Dolly</button> -->
+
+    <h1 id="res"></h1>
+
+    <button onclick="showInH1('Aman')">Compliment to Aman</button>
+    <button onclick="showInH1('Dolly')">Compliment to Dolly</button>
+
+</body>
+</html>
