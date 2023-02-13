@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let greet1=function greet(){document.write("hello")};
+        // // greet();//error
+        // greet1();
+
+        // let greet2=function(){document.write("hello")}; //anonymous function
+        // greet2();
+
+        // let greet3=()=>{document.write("hello")}; //arrow function
+        // greet3();
+
+    </script>
+</head>
+<body>
+    <!-- <button id="btn">Greet Aman</button> -->
+    <h1 id="time"></h1>
+    <button onclick="fxn()">stop</button>
+</body>
+<script>
+    // let btn = document.getElementById("btn");
+    // btn.addEventListener("dblclick", ()=> document.write("<h1>Hello Aman Sir!!</h1>") );
+
+    // setTimeout(() => {
+    //     document.write("Helllo JS students !!");
+    // }, 3000);
+    
+    let timeobj=document.getElementById("time");
+
+    let clock=setInterval(() => {
+        // document.write(new Date()+"<br>");
+        // timeobj.innerHTML=new Date();
+        let dateobj=new Date();
+        timeobj.innerHTML=dateobj.getDate()+"/"+(dateobj.getMonth()+1)+"/"+dateobj.getFullYear() + "    "+dateobj.getHours()+":"+dateobj.getMinutes()+":"+dateobj.getSeconds()+":"+dateobj.getMilliseconds();
+    }, 1);
+
+    function fxn() {
+        clearInterval(clock);//to stop
+    }
+
+</script>
+</html>
