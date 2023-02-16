@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let basket=["apple","mango","guava","litchi","strawberry"];
+        // document.write(basket+"<br>");
+
+        // document.write(basket.sort()+"<br>");
+        // basket.sort((e1,e2)=> e2<e1 ? -1 : 1);
+
+
+        // document.write(basket);
+
+        let num = [10, 34, 5, 5, 54, 3, 44, 2, 3, 4, 55, 64, 65, 6];
+
+        // num.sort();
+        // num.sort((e1,e2)=>e1>e2 ? 1 : -1);//ascending order
+        // // num.sort((e1,e2)=>e1>e2 ? -1 : 1);//descending order
+        // num.sort(ascending);
+
+        // document.write(num);
+
+        // function ascending(num1,num2)
+        // {
+        //     if(num1>num2)
+        //     return 1;
+        //     else if(num2>num1)
+        //     return -1;
+        //     else
+        //     return 0;
+        // }
+
+        // num.forEach(e => document.write(e+","));
+
+        // for (let i = 0; i < num.length; i++)
+        // {
+        //     setTimeout(() => {
+        //         document.write(num[i] + ",");
+        //     }, 1000*i);
+        // }
+
+        let i=0;
+        num.forEach((n)=>{
+             setTimeout(() =>{
+                document.write(n+",")
+             },1000*(i++))
+        });
+
+    </script>
+</body>
+
+</html>
