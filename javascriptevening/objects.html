@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // document.write(Math.pow(5,6));
+
+        let person={
+            name:"Aman tiwari",
+            "mobile no.":9891062743,
+            salary:9000000.555,
+            msg:"yo bro",
+            skills:["Java","python","spring"],
+            Address:{
+                "city":"delhi",
+                "pincode":110096
+            }
+        }
+
+        // document.write(typeof person);
+        // document.write(person)
+        // document.write(person.salary)
+        // person.salary=99999999;
+        // document.write(person["salary"])
+        // document.write(person.Address.pincode);
+        // document.write(person.Address["pincode"]);
+        document.write(person.skills[0])
+        document.write(person.skills[1])
+        document.write(person.skills[2])
+        // console.log(person);
+
+        //JSON -> js object notation
+
+        // document.write(JSON.stringify(person));
+        // let personobjstring=JSON.stringify(person);
+        // let obj=JSON.parse(personobjstring);
+
+        // document.write(typeof obj);
+
+        let employees = [
+            {
+                "name": "Aman",
+                "phone": 9891000000,
+                "id": 1
+            },
+            {
+                "name": "Aman 2",
+                "phone": 9891000000,
+                "id": 2
+            },
+            {
+                "name": "Aman 3",
+                "phone": 9891000000,
+                "id": 3
+            },
+            {
+                "name": "Aman 4",
+                "phone": 9891000000,
+                "id": 4
+            },
+            {
+                "name": "Aman 5",
+                "phone": 9891000000,
+                "id": 5
+            }
+        ];
+
+        // for(let emp of employees)
+        // {
+        //     document.write(`${emp.id} employee name is ${emp.name} <br>`);
+        // }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
