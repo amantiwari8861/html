@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  background-color: black;
+  height: 100px;
+}
+.logo {
+  background-color: gainsboro;
+  border-radius: 15px;
+  margin-left: 8px;
+  margin-top: 5px;
+  float: left;
+}
+.logo img {
+  height: 80px;
+}
+.nav {
+  line-height: 100px;
+  width: 60%;
+  /* background-color: rgb(195, 249, 192); */
+  float: right;
+  margin-right: 100px;
+}
+.nav ul {
+  display: inline-block;
+}
+.nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 20px;
+  text-align: center;
+}
+.nav ul li a:hover {
+  background-color: gray;
+  color: hwb(144 0% 0%);
+  transition: all 2s;
+}
+.nav ul li a {
+  padding: 2px;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+  line-height: 60px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.fa-envelope {
+  color: rgb(243, 243, 119);
+}
