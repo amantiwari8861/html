@@ -1,0 +1,84 @@
+
+
+data-bs-toggle="modal" data-bs-target="#edituser" data-bs-userid='"+student.getId()+"'
+
+
+
+
+<div class="modal fade" id="edituser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit User</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="EditUser" class="m-3" method='post'>
+                    <div class="formgroup">
+                        <label for="id" class="form-label">Id</label>
+                        <input type="text" name="id" class="form-control" id="edituserid" disabled>
+                    </div>
+                    <div class="formgroup">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control" id="name">
+                    </div>
+                    <input type='hidden' name='uid' id='hiddenid'>
+                    
+                    
+                    <div class="formgroup">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="qualification" class="form-label">Qualification</label>
+                        <input type="text" name="qualification" class="form-control" id="qualification">
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="mobile" class="form-label">Mobile</label>
+                        <input type="tel" name="mobile" class="form-control" id="mobile">
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="gender" class="form-label">Gender</label>
+                        <input type="text" name="gender" class="form-control" id="gender">
+                    </div>
+
+
+                    <div class="formgroup">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" name="city" class="form-control" id="city">
+                    </div>
+                    <div class="formgroup">
+                        <label for="dob" class="form-label">DOB</label>
+                        <input type="date" name="dob" class="form-control" id="dob">
+                    </div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Edit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    const exampleModal = document.getElementById('edituser')
+    exampleModal.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        const data = button.getAttribute('data-bs-userid')
+
+        // Update the modal's content.
+        const inp = document.querySelector('#edituserid')
+
+        inp.value = data
+        document.querySelector('#hiddenid').value = data;
+    })
+</script>
